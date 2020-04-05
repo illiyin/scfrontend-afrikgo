@@ -1,1 +1,1 @@
-This is initial commit of Afrikgo Projects
+This is initial commit of Afrikgo Projects - Anda berada di branch Dev
