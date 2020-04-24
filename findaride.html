@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <!-- head -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="empty" name="description">
     <meta content="empty" name="author">
 
-    <title>Afrikgo</title>
+    <title>Find a Ride</title>
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-
+    
+    
 </head>
 <body>
 
     <header>
         <nav class="navbar navbar-default main-navbar">
             <div class="container-fluid">
+                
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -29,26 +30,295 @@
                     <a class="navbar-brand" href="index.html"><img src="img/logo.png"><h1>AFRIK<span>GO</span></h1></a>
                 </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="findaride.html">Find a ride</a></li>                
+                        <li><a href="howitworks.html" class="active">Find a Ride</a></li>                
                         <li><a href="howitworks.html">Offer a Ride</a></li>  
                         <li><a href="faq.html">Faq</a></li>                
                         <li><a href="contact.html">Contact us</a></li>                
                         <li><a href="signin.html">Sign in</a></li>                
                         <li><a href="signup.html" class="signup">Sign up</a></li>                
                     </ul>
-                </div>
-            </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
     </header>
 
-    
-
-    <section class="route">
+    <section class="find-form ride-form">
         <div class="container">
-            <h4 class="section-title">Thousands of departures every day</h4>
-            <p class="route-desc">Where do you want to go?</p>
+            <h3 class="pagetitle">4 rides available from Accra to Kummasi</h3>
+            <div class="find-form-wrapper">
+                <form action="#" method="" class="wraping">
+                    <div class="group-input input-leaving">
+                        <input type="text" name="" class="field" placeholder="Leaving from..">
+                        <span><img src="img/Icon-Location.png" width="18" height="23" alt="Find a Ride"></span>
+                    </div>  
+                    <div class="group-input switch hidden-xs">
+                        <img src="img/Switch.png" width="23" height="19" alt="Switch Ride Icon">
+                    </div>
+                    <div class="group-input input-going">
+                        <input type="text" name="" class="field" placeholder="Going to..">
+                        <span><img src="img/Forma 1.png"></span>
+                    </div> 
+                    <div class="group-input input-date">
+                        <input type="text" name="" class="field" placeholder="Select date">
+                        <span><img src="img/Icon-Date.png"></span>
+                    </div>      
+                    <div class="group-input ride-btn">
+                        <button type="submit" class="field find-btn">find</button>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="front-content ride-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                    <div class="panel panel-default panel-action">
+                        <div class="panel-body">
+                            <h5 class="pa-title">Filter</h5>
+                            <div class="input-filter top">
+                                <p>
+                                    <img src="img/Icon-Time.png">
+                                    <span class="af-icon ico-clock"></span>
+                                    Pickup Time 
+                                    <span class="filter-value">(2h - 7h)</span>
+                                </p>
+                                <input id="productps" type="text" class="span2" value="" data-slider-min="1" data-slider-max="7" data-slider-step="1" data-slider-value="[2,6]"/>
+                            </div>
+                            <div class="input-filter">
+                                <p>
+                                    <img src="img/price.png">
+                                    <span class="af-icon ico-dollar"></span> Price <span class="filter-value">($20 - $29)</span></p>
+                                <input id="productprice" type="text" class="span2" value="" data-slider-min="5" data-slider-max="50" data-slider-step="2" data-slider-value="[12,42]"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-action panel-info pa-center">
+                        <div class="panel-body">                            
+                            <img src="img/Layer 22.png" width="63" height="74" alt="AfrikGo Ride Alert" id="img-panel">
+                            <p class="pa-title">Don't miss out on new rides!</p>
+                            <a href="#" class="btn btn-afg btn-blue" data-toggle="modal" data-target="#myModal" id="img-panel2">Create Ride Alert</a>
+                            
+                            <div class="modal fade create-alert" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        
+                                        <div class="modal-header">
+                                            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Create a Ride Alert</h4>
+                                        </div>
+                                        
+                                        <div class="modal-body">
+                                            <form class="form-horizontal af-form">
+                                                <div class="form-group alert-filter">
+                                                    <div class="col-xs-6">
+                                                        <div class="route-item">
+                                                            <div class="dest">
+                                                                <ul>
+                                                                    <li><span></span>Accra</li>
+                                                                    <li><span></span>Kumasi</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="input-filter">
+                                                            <p><span class="af-icon ico-clock"></span> Pickup Time <span class="filter-value">(2h - 7h)</span></p>
+                                                            <input id="modalfilter" type="text" class="span2" value="" data-slider-min="1" data-slider-max="7" data-slider-step="1" data-slider-value="[2,6]"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group alert-field">
+                                                    <div class="col-xs-6">
+                                                        <div class="group-input">                                                            
+                                                            <input type="text" name="" class="field" placeholder="Select date">
+                                                            <span><img src="img/Icon-Date.png"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="group-input">
+                                                            <input type="email" name="" class="field" placeholder="Your email">
+                                                            <span class="glyphicon glyphicon-envelope"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-xs-12">
+                                                        <div class="check-content">
+                                                            <input type="checkbox" name="terms" id="btncom" value="1">
+                                                            <label for="btncom">
+                                                                <span></span>
+                                                            </label>
+                                                            <span class="text-bold">Get weekly updates</span>
+                                                            <p class="add-label">If you often make this journey, create an alert to see new rides every week.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group submit-alert">
+                                                    <div class="col-xs-12">
+                                                        <input type="submit" name="createalert" id="createalert" value="Create" class="btn btn-afg btn-blue">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-8 col-lg-9 ride-list">
+                    
+                    <div class="media ride-item">
+                        <div class="media-left">
+                            <a href="#" class="ride-img">
+                                <img class="media-object" src="img/bg.png" alt="No Images Available">
+                                <span class="af-icon ico-check"></span>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-6 left-content">
+                                    <h3 class="content-header">Julie B</h3>
+                                    <p class="content-city">Accra - Kummasi</p>
+                                    <p class="content-p">
+                                        Stanford New Road, Accra WA14 1EN, UK
+                                    </p>
+                                    <p class="content-p">
+                                        Brixton, Kummasi SW9, UK
+                                    </p>
+                                </div>
+                                <div class="col-md-6 right-content">
+                                    <h3 class="price-text">$29</h3>
+                                    <p class="price-count">Per Passenger</p>
+                                    <p class="seats-avail">2 Seats Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ride-item-separator">
+                    </div>
+                    
+                    <div class="media ride-item">
+                        <div class="media-left">
+                            <a href="#" class="ride-img">
+                                <img class="media-object" src="img/bg.png" alt="No Images Available">
+                                <span class="af-icon ico-check"></span>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-6 left-content">
+                                    <h3 class="content-header">Julie B</h3>
+                                    <p class="content-city">Accra - Kummasi</p>
+                                    <p class="content-p">
+                                        Stanford New Road, Accra WA14 1EN, UK
+                                    </p>
+                                    <p class="content-p">
+                                        Brixton, Kummasi SW9, UK
+                                    </p>
+                                </div>
+                                <div class="col-md-6 right-content">
+                                    <h3 class="price-text">$29</h3>
+                                    <p class="price-count">Per Passenger</p>
+                                    <p class="seats-avail">2 Seats Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ride-item-separator">
+                    </div>
+                    
+                    <div class="media ride-item">
+                        <div class="media-left">
+                            <a href="#" class="ride-img">
+                                <img class="media-object" src="img/bg.png" alt="No Images Available">
+                                <span class="af-icon ico-check"></span>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-6 left-content">
+                                    <h3 class="content-header">Julie B</h3>
+                                    <p class="content-city">Accra - Kummasi</p>
+                                    <p class="content-p">
+                                        Stanford New Road, Accra WA14 1EN, UK
+                                    </p>
+                                    <p class="content-p">
+                                        Brixton, Kummasi SW9, UK
+                                    </p>
+                                </div>
+                                <div class="col-md-6 right-content">
+                                    <h3 class="price-text">$29</h3>
+                                    <p class="price-count">Per Passenger</p>
+                                    <p class="seats-avail">2 Seats Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ride-item-separator">
+                    </div>
+                    
+                    <div class="media ride-item">
+                        <div class="media-left">
+                            <a href="#" class="ride-img">
+                                <img class="media-object" src="img/bg.png" alt="No Images Available">
+                                <span class="af-icon ico-check"></span>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="row">
+                                <div class="col-md-6 left-content">
+                                    <h3 class="content-header">Julie B</h3>
+                                    <p class="content-city">Accra - Kummasi</p>
+                                    <p class="content-p">
+                                        Stanford New Road, Accra WA14 1EN, UK
+                                    </p>
+                                    <p class="content-p">
+                                        Brixton, Kummasi SW9, UK
+                                    </p>
+                                </div>
+                                <div class="col-md-6 right-content">
+                                    <h3 class="price-text">$29</h3>
+                                    <p class="price-count">Per Passenger</p>
+                                    <p class="seats-avail">2 Seats Available</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="ride-item-separator">
+                    </div>
+                    
+                    <nav aria-label="Page navigation" class="ride-paging">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="route ride-routes">
+        <div class="container">
+            <h4 class="section-title">Most Popular Rides</h4>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="route-item">
@@ -68,13 +338,13 @@
                     <div class="route-item">
                         <div class="dest">
                             <ul>
-                                <li><span></span>Accra</li>
-                                <li><span></span>Kumasi</li>
+                                <li><span></span>Ashiaman</li>
+                                <li><span></span>Sunyani</li>
                             </ul>
                         </div>
                         <div class="price">
                             <p>Starting from</p>
-                            <p>$16</p>
+                            <p>$8</p>
                         </div>
                     </div>
                 </div>
@@ -82,13 +352,13 @@
                     <div class="route-item">
                         <div class="dest">
                             <ul>
-                                <li><span></span>Accra</li>
-                                <li><span></span>Kumasi</li>
+                                <li><span></span>Tamale</li>
+                                <li><span></span>Cape coast</li>
                             </ul>
                         </div>
                         <div class="price">
                             <p>Starting from</p>
-                            <p>$16</p>
+                            <p>$12</p>
                         </div>
                     </div>
                 </div>
@@ -96,13 +366,13 @@
                     <div class="route-item">
                         <div class="dest">
                             <ul>
-                                <li><span></span>Accra</li>
-                                <li><span></span>Kumasi</li>
+                                <li><span></span>Yendi</li>
+                                <li><span></span>Hohoe</li>
                             </ul>
                         </div>
                         <div class="price">
                             <p>Starting from</p>
-                            <p>$16</p>
+                            <p>$19</p>
                         </div>
                     </div>
                 </div>
@@ -110,13 +380,13 @@
                     <div class="route-item">
                         <div class="dest">
                             <ul>
-                                <li><span></span>Accra</li>
-                                <li><span></span>Kumasi</li>
+                                <li><span></span>Madina</li>
+                                <li><span></span>Techiman</li>
                             </ul>
                         </div>
                         <div class="price">
                             <p>Starting from</p>
-                            <p>$16</p>
+                            <p>$11</p>
                         </div>
                     </div>
                 </div>
@@ -124,13 +394,13 @@
                     <div class="route-item">
                         <div class="dest">
                             <ul>
-                                <li><span></span>Accra</li>
-                                <li><span></span>Kumasi</li>
+                                <li><span></span>Tawifa</li>
+                                <li><span></span>Bawku</li>
                             </ul>
                         </div>
                         <div class="price">
                             <p>Starting from</p>
-                            <p>$16</p>
+                            <p>$9</p>
                         </div>
                     </div>
                 </div>
@@ -142,9 +412,7 @@
 
         </div>
     </section>
-
     
-
     <footer>
         <div class="footer">
             <div class="container">
@@ -197,10 +465,7 @@
         </div>
     </footer>
 
-
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.custom-scrollbar.min.js"></script>
-<script type="text/javascript" src="js/core.js"></script>
+  <script type="text/javascript" src="js/jquery-4.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
