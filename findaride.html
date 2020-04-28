@@ -11,7 +11,41 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
-    
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#slider-range" ).slider({
+        range: true,
+        min: 1,
+        max: 10,
+        values: [ 2, 7 ],
+        slide: function( event, ui ) {
+            $( "#amount" ).val( "h" + ui.values[ 0 ] + " - h" + ui.values[ 1 ] );
+        }
+        });
+        $( "#amount" ).val( "h" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - h" + $( "#slider-range" ).slider( "values", 1 ) );
+     } );
+  </script>
+  <script>
+    $( function() {
+        $( "#slider-range-bottom" ).slider({
+        range: true,
+        min: 19,
+        max: 31,
+        values: [ 20, 29 ],
+        slide: function( event, ui ) {
+            $( "#amoun" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+        });
+        $( "#amoun" ).val( "$" + $( "#slider-range-bottom" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range-bottom" ).slider( "values", 1 ) );
+     } );
+  </script>
     
 </head>
 <body>
@@ -85,15 +119,22 @@
                                     <img src="img/Icon-Time.png">
                                     <span class="af-icon ico-clock"></span>
                                     Pickup Time 
-                                    <span class="filter-value">(2h - 7h)</span>
+                                    <span class="filter-value"><input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"></p></span>
                                 </p>
-                                <input id="productps" type="text" class="span2" value="" data-slider-min="1" data-slider-max="7" data-slider-step="1" data-slider-value="[2,6]"/>
+                                
+                                <div id="slider-range"></div>
+
                             </div>
                             <div class="input-filter">
                                 <p>
                                     <img src="img/price.png">
-                                    <span class="af-icon ico-dollar"></span> Price <span class="filter-value">($20 - $29)</span></p>
-                                <input id="productprice" type="text" class="span2" value="" data-slider-min="5" data-slider-max="50" data-slider-step="2" data-slider-value="[12,42]"/>
+                                    <span class="af-icon ico-dollar"></span> 
+                                    Price
+                                    <span class="filter-value"><input type="text" id="amoun" readonly style="border:0; color:#f6931f; font-weight:bold;"></p></span>
+                                </p>
+
+                                <div id="slider-range-bottom"></div>
+
                             </div>
                         </div>
                     </div>
@@ -411,6 +452,12 @@
             </div>
 
         </div>
+        <p>
+  <label for="amount">Price range:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+ 
+<div id="slider-range"></div>
     </section>
     
     <footer>
