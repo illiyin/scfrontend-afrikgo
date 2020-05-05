@@ -29,6 +29,8 @@ a:hover {
     margin-bottom: 38px;
     background: #fff;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
     box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
 }
 .input-filter{
@@ -373,7 +375,7 @@ a:hover {
 }
 .find-form-wrapper {
     background: #fff;
-    padding: 25px 24px 25px 55px;
+    padding: 25px 24px 25px 15px;
     box-shadow: 0px 0px 40px -2px rgba(218,218,218, 0.45);
     margin-bottom: 42px;
 }
@@ -382,12 +384,13 @@ a:hover {
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
+    padding-left: 78px;
 }
 
 .find-form-wrapper .group-input {
     position: relative;
-    margin: 0 28px;
-    width: 21%;
+    margin: 0 8px;
+    width:25%;
 }
 .find-form-wrapper .field {
     margin-bottom: 0;
@@ -2729,6 +2732,9 @@ a:hover {
     margin-left: -48px;
     margin-top: 20px;
 }
-.input-img {
-    margin: 26px;
+.group-input switch hidden-xs > img{
+    
+}
+#switch{
+    margin: 20px;
 }
