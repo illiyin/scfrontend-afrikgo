@@ -22,11 +22,13 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!--acordion-->
-    <script>
-        $( function() {
-        $( "#accordion" ).accordion();
-        } );
-    </script>
+   <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );
+  </script>
 
 </head>
 <body>
@@ -83,46 +85,46 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-8 col-md-8 faq-content">
-                            <div aria-multiselectable="true" class="panel-group faq-panel-group" id="accordion" role="tablist">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" id="headingOne" role="tab">
-                                    <a aria-controls="collapseOne" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" role="button"> <h4 class="panel-title">What is Afrikgo?<span class="more-less span-unrotate"><img src="img/Arrow.png"></span></h4></a>
-                                </div>
-                                <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseOne" role="tabpanel">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                                    </div>
-                                </div>
 
-                            </div>
-                            <div class="panel panel-default hideme">
-                                <div class="panel-heading" id="headingOne" role="tab">
-                                    <a aria-controls="collapseTwo" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo" role="button"> <h4 class="panel-title">Do I have to talk in a Afrikgo? <span class="more-less span-unrotate"><img src="img/Arrow.png"></span></h4></a>
-                                </div>
-                                <div aria-labelledby="headingTwo" class="panel-collapse collapse" id="collapseTwo" role="tabpanel">
+                        <div class="col-xs-12 col-sm-8 col-md-8 faq-content">
+                           
+                                <div aria-multiselectable="true" class="panel-group faq-panel-group" id="accordion" role="tablist">
+                                    <h3>What is Afrikgo?</h3>
+                                 <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseOne" role="tabpanel">
                                     <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                     </div>
                                 </div>
+    
+                        <h3>Do I have to talk in a Afrikgo?</h3>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                             </div>
-                            <div class="panel panel-default hideme">
-                                <div class="panel-heading" id="headingOne" role="tab">
-                                    <a aria-controls="collapseThree" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseThree" role="button"> <h4 class="panel-title">Can I commute with Afrikgo?<span class="more-less span-unrotate"><img src="img/Arrow.png"></span></h4></a>
-                                </div>
-                                <div aria-labelledby="headingThree" class="panel-collapse collapse" id="collapseThree" role="tabpanel">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </div>
-                                </div>
+
+
+                        <h3>Can I commute with Afrikgo?</h3>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                                
                             </div>
-                            <div class="panel panel-default hideme">
-                                <div class="panel-heading" id="headingOne" role="tab">
-                                    <a aria-controls="collapseFour" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseFour" role="button"> <h4 class="panel-title">Sign Up : How does it work?<span class="more-less span-rotate"><img src="img/Arrow.png"></span></h4></a>
-                                </div>
-                                <div aria-labelledby="headingFour" class="panel-collapse collapse in" id="collapseFour" role="tabpanel">
-                                    <div class="panel-body">
-                                        To sign up and benefit from our carpooling services, you have 2 options:
+
+                        <h3>Sign Up : How does it work?</h3>
+                            <div class="panel-body">
+                                To sign up and benefit from our carpooling services, you have 2 options:
                                         <br>
                                         -    Sign up in just 30 seconds with your email address
                                         
@@ -136,25 +138,14 @@
                                         Afrikgo will never communicate your personal data to any third party and does not publish your name nor any confidential data on the site.
                                         In both cases, to confirm your membership, you need to accept our Terms & Conditions.
                                         <br>
-                                        Sign up to Afrikgo!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default hideme">
-                                <div class="panel-heading" id="headingOne" role="tab">
-                                    <a aria-controls="collapseFive" aria-expanded="true" data-parent="#accordion" data-toggle="collapse" href="#collapseFive" role="button"> <h4 class="panel-title">Log In : How does it work?<span class="more-less span-unrotate"><img src="img/Arrow.png"></span></h4></a>
-                                </div>
-                                <div aria-labelledby="headingFive" class="panel-collapse collapse" id="collapseFive" role="tabpanel">
-                                    <div class="panel-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </div>
+                                        Sign up to Afrikgo!                               
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+          </div>
         </div>
     </section>
 
