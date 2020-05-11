@@ -384,13 +384,12 @@ a:hover {
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
-    padding-left: 78px;
 }
 
 .find-form-wrapper .group-input {
     position: relative;
     margin: 0 8px;
-    width:25%;
+    width: 17%;
 }
 .find-form-wrapper .field {
     margin-bottom: 0;
