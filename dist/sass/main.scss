@@ -6,14 +6,8 @@
 @import "components/navbar";
 @import "components/footer";
 
-@import "homepage/howitworks";
-@import "homepage/homepagehero";
-@import "homepage/aboutushero";
-@import "homepage/wraping";
-@import "homepage/benefit";
-@import "homepage/route";
-@import "homepage/carpool";
-@import "homepage/user";
+// Homepage style
+@import "homepage/index";
 
 @import "findaride/wrapfind";
 @import "findaride/panel";
@@ -21,9 +15,9 @@
 @import "findaride/inboxpanel";
 @import "findaride/alert";
 
-@import "FAQ/content";
-@import "FAQ/pagetitle";
-@import "FAQ/sidebar";
+@import "faq/content";
+@import "faq/pagetitle";
+@import "faq/sidebar";
 
 
 

@@ -15,6 +15,7 @@
 			float: right;
 			width: 134px;
 			margin-right: 0;
+			// font-family: $font-family;
 			font-family: "Rubik Medium", sans-serif;
 			color: $putih;
 			background: $biru;
@@ -79,6 +80,7 @@
 .faq-sidebar li {
 	font-family: "Rubik Medium", Fallback, sans-serif;
 	color: $abu19;
+	// font-size: $font-size-base;
 	font-size: 16px;
 	letter-spacing: .25px;
 	max-width: 225px;
