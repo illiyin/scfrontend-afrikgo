@@ -1,0 +1,105 @@
+.homepage-hero h1 {
+	width: 100%;
+	max-width: 420px;
+	margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+	.homepage-hero h1 {
+		max-width: 450px;
+	}
+}
+.homepage-hero p {
+	font-size: 18px;
+	line-height: 32px;
+	width: 100% !important;
+}
+@media (min-width: 1200px) {
+	.homepage-hero p {
+		max-width: 430px !important;
+	}
+}
+@media (max-width: 1200px) {
+	.homepage-hero p {
+		font-size: 18px;
+		line-height: 32px;
+		max-width: 430px !important;
+	}
+}
+@media (min-width: 800px) and (max-width: 992px) {
+	.homepage-hero p {
+		max-width: 320px !important;
+	}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+@media (max-width: 360px) {
+	.homepage-hero h1 {
+		font-size: 35px !important;
+		margin-bottom: 40px !important;
+	}
+}
+.underlined-static{
+	text-decoration: underline $abu5;
+}
+@media (min-width:680px) and (max-width:992px){
+	.homepage-hero .header .bg{       
+		height: 400px;
+	}
+	.homepage-hero .header,
+	.homepage-hero .header .container{
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.homepage-hero .header .bg{
+		height: 700px;
+	}
+  .homepage-hero .header{
+		height: 700px;
+	}
+  .homepage-hero .header .bg {
+    justify-content: flex-start;
+    text-align: center;
+    background-position: 40% 120%;
+    background-size: 100% auto;
+  }
+  .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
+    margin: 0 auto;
+  }
+  .homepage-hero .header .bg h1 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .homepage-hero .header .bg p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .homepage-hero .header{
+		height: auto;
+	}
+  .homepage-hero .header .bg {
+    justify-content: flex-start;
+    text-align: center;
+    background-position: 40% 100%;
+    background-size: 150% auto;
+    height: 760px;
+  }
+  .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
+    margin: 0 auto;
+  } 
+}
+@media screen and (max-width: 489px) {
+  .homepage-hero .header{
+    height: auto;
+  }
+  .homepage-hero .header .bg {
+    height: 600px;
+    background-position: bottom center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .homepage-hero .header .bg {
+    height: 500px;
+    background-position: bottom center;
+  }
+}

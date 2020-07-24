@@ -1,0 +1,49 @@
+@media screen and (max-width: 800px) {
+	.aboutus-hero .header {
+		height: 650px;
+	}
+	.aboutus-hero .header .bg{
+		height: 650px;
+	}
+  
+}
+@media screen and (max-width: 720px) {
+	.aboutus-hero .header {
+		height: 550px;
+	}
+	.aboutus-hero .header .bg{
+		height: 550px;
+	}
+	.aboutus-hero .header .bg {
+	    background-size: 115% auto;
+	}
+  
+}
+
+@media screen and (max-width: 550px) {
+	.aboutus-hero .header {
+		height: 500px;
+	}
+	.aboutus-hero .header .bg{
+		height: 500px;
+	}
+	.aboutus-hero .header .bg {
+		background-position: 40% 100%;
+	    background-size: 140% auto;
+	}
+  
+}
+@media screen and (max-width: 360px) {
+	.aboutus-hero .header {
+		height: 500px;
+	}
+	.aboutus-hero .header .bg{
+		height: 500px;
+	}
+	.aboutus-hero .header .bg {
+		background-position: 40% 100%;
+	    background-size: 200% auto;
+	}
+  
+}
+

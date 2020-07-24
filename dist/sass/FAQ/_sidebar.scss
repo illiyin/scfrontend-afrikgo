@@ -1,0 +1,26 @@
+.rd-panel .rdp-collapse{
+    font-size: 24px;
+}
+.rdp-collapse .decimal{
+    font-size: 14px;
+}
+.rdc-header .caption-header{
+    display: block;
+    margin-left: 0;
+}
+.rd-panel .rdp-collapse{
+    font-size: 35px;
+    line-height: 27px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 10px;
+}
+.rd-panel .rdp-collapse[aria-expanded="true"]{
+    border-bottom-color: #ebebeb;
+}
+.rdp-collapse .decimal{
+    font-size: 20px;
+}
+.rdp-collapse .af-icon{
+    position: relative;
+    top: -2px;
+}

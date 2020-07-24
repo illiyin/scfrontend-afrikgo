@@ -1,0 +1,40 @@
+{
+  "name": "afrikgo",
+  "version": "1.0.0",
+  "description": "a website for travelling",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illiyin/scfrontend-afrikgo.git"
+  },
+  "keywords": [
+    "afrikgo"
+  ],
+  "author": "mutiara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illiyin/scfrontend-afrikgo/issues"
+  },
+  "homepage": "https://github.com/illiyin/scfrontend-afrikgo#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-scss": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0", 
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.15.0",
+    "run-sequence": "^2.2.0"
+  }
+}

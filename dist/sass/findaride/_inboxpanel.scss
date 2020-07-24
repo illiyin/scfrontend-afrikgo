@@ -1,0 +1,117 @@
+.ride-content .panel-info {
+    padding: 5px 40px;
+}
+.ride-content .panel-info img {
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+.pa-center img {
+    display: inline-block;
+}
+.ride-content .panel-info .pa-title {
+    margin-bottom: 14px;
+}
+.ride-content .btn-afg {
+    padding: 14px 20px;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+.pa-center .btn {
+    display: inline-block;
+}
+.btn-blue {
+    border: none;
+    background: #2788e6;
+    box-shadow: none;
+}
+.btn-afg {
+    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0;
+    color: $putih;
+    text-transform: uppercase;
+}
+.pa-center {
+    text-align: center;
+}
+.create-alert {
+    padding-right: 0 !important;
+}
+.create-alert .modal-dialog {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.create-alert .modal-content {
+    padding: 0 62px;
+}
+.create-alert .modal-header {
+    padding-top: 36px;
+    padding-bottom: 30px;
+}
+.create-alert .modal-title {
+    font-family: 'Rubik Light', Fallback, sans-serif;
+    font-size: 35px;
+    line-height: normal;
+    letter-spacing: -0.023em;
+    color: $biru;
+}
+.create-alert .modal-body {
+    padding: 36px 0 0;
+    text-align: left;
+}
+.create-alert .af-form .alert-filter {
+    margin-bottom: 33px;
+}
+.create-alert .route-item {
+    padding: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+.route-item {
+    padding: 20px;
+    margin-bottom: 38px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
+}
+.route-item .dest, .route-item .price {
+    text-align: left;
+}
+.route-item ul {
+    margin-bottom: 0;
+    padding-left: 0px;
+}
+.route-item .dest li {
+    list-style: none;
+    padding-left: 20px;
+    font-family: "Rubik Medium", Fallback, sans-serif;
+    font-size: 16px;
+    color: $hitam;
+    position: relative;
+}
+.route-item .dest li:nth-child(1) {
+    margin-bottom: 15px;
+}
+.route-item .dest li span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: $abu8;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+.ride-content .panel-body .create-alert .input-filter {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.ride-content .panel-body .input-filter {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
