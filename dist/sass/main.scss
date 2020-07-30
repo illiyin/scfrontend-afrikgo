@@ -1,23 +1,21 @@
-@import "abstracts/global";
-@import "abstracts/variablesco";
-@import "abstracts/font";
-@import "abstracts/variablefont";
+/*
+    Code by Mutiara
+*/
 
-@import "components/navbar";
-@import "components/footer";
+//abstracts style
+@import "abstracts/index";
+
+//components style
+@import "components/index";
 
 // Homepage style
 @import "homepage/index";
 
-@import "findaride/wrapfind";
-@import "findaride/panel";
-@import "findaride/filterpanel";
-@import "findaride/inboxpanel";
-@import "findaride/alert";
+// Find-a-ride style
+@import "findaride/index";
 
-@import "faq/content";
-@import "faq/pagetitle";
-@import "faq/sidebar";
+// faq style
+@import "faq/index";
 
 
 

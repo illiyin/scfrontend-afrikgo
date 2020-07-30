@@ -1,3 +1,6 @@
+/*
+    Code by Mutiara
+*/
 /*GLOBAL*/
 html,
 body {
@@ -875,33 +878,32 @@ a:hover {
   .find-btn {
     width: 100%; } }
 
-/*BENEFIT--------------------------------------------------*/
 .benefit {
   padding: 80px 0;
   text-align: center; }
 
-.section--title {
+.section-title {
   font-family: "Rubik Light", Fallback, sans-serif;
   font-size: 42px;
   color: #2788e6; }
 
-.benefit .section--title {
+.benefit .section-title {
   margin-bottom: 100px; }
 
-.benefit--img {
+.benefit-img {
   margin: 0 auto;
   margin-bottom: 30px;
   height: 63px;
   vertical-align: middle; }
 
-.benefit .benefit--desc {
+.benefit .benefit-desc {
   font-family: "Rubik Light", Fallback, sans-serif;
   font-size: 16px;
   line-height: 27px;
   color: #767676;
   letter-spacing: .25px; }
 
-.benefit .benefit--title {
+.benefit .benefit-title {
   font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 16px;
   color: #9daebf;
@@ -911,12 +913,6 @@ a:hover {
 
 .benefit .col-xs-12 {
   margin-bottom: 60px; }
-
-.benefit__feature-img {
-  margin-bottom: 34px; }
-  .benefit__feature-img .benefit__feature-img img {
-    width: 100%;
-    max-width: 370px; }
 
 /*ROUTE---------------------------------------------*/
 .route {

@@ -3,11 +3,6 @@ html,
 body {
 	padding: 0;
 	-webkit-font-smoothing: antialiased !important;
-	font-smoothing: antialiased !important;
-}
-
-body {
-/*	background: #fefefe;*/
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -252,12 +247,8 @@ a:hover {
 }
 
 
-.hero-image {
-
-}
-
 .hero-wrapper {
-	background: url(images/hero1.jpg) no-repeat;
+	background: url(../images/hero1.jpg) no-repeat;
 	padding: 100px 0 0 0;
 }
 .hero-wrapper h1 {
@@ -315,7 +306,7 @@ a:hover {
 }
 
 .find-form {
-	background: url(images/Pattern1.jpg) no-repeat;
+	background: url(../images/Pattern1.jpg) no-repeat;
 	background-size: 100%;
 	background-position: 0 100%;
 }
@@ -368,7 +359,7 @@ a:hover {
 }
 .find-form-wrapper .group-input .find-btn {
 	width: initial;
-	padding: 24px 37px;
+	padding: 24px 35px;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: "Rubik Medium", Fallback, sans-serif;
@@ -532,7 +523,7 @@ a:hover {
 
 .route {
  	text-align: center;
- 	background: url(images/route-bg.jpg);
+ 	background: url(../images/route-bg.jpg);
 }
 @media (min-width: 600px) and (max-width: 768px){
 	.route .col-xs-12 {
@@ -1045,8 +1036,6 @@ a:hover {
 .styled-checkbox:hover + label:before {
   	background: transparent;
 }
-.styled-checkbox:focus + label:before {
-}
 .styled-checkbox:checked + label:before {
   	background: #2788e6;
 }
@@ -1393,6 +1382,11 @@ a:hover {
   margin-top: 2px;
 }
 
+
+
+
+
+
 /*FAQ page*/
 .faq {
 	padding: 65px 0;
@@ -1584,7 +1578,7 @@ a:hover {
 	padding: 60px 0;
   	padding-bottom: 40px;
 	position: relative;
-	background: url(images/pattern.jpg) no-repeat;
+	background: url(../images/Pattern.jpg) no-repeat;
   	background-position: 0 100%;
 }
 .footer h4 {
@@ -1688,7 +1682,6 @@ a:hover {
 }
 .main-static h1, .main-static p {
   -webkit-font-smoothing: antialiased !important;
-  font-smoothing: antialiased !important;
 }
 .main-static h1 {
   font-family: "Rubik Light", Fallback, helvetica, sans-serif;
@@ -1973,7 +1966,7 @@ a:hover {
   margin-bottom: 30px;
 }
 .how-it-works .header .bg {
-  background: url("images/hero-img.jpg") no-repeat;
+  background: url("../images/hero-img.jpg") no-repeat;
   background-size: 839px auto;
   background-position: 427px center;
   height: 100%;
@@ -2465,6 +2458,7 @@ a:hover {
 	}
   
 }
+
 
 /*PAY*/
 
