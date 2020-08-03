@@ -51,7 +51,6 @@
 	width: initial;
 }
 .find-form-wrapper .group-input .find-btn {
-	width: initial;
 	padding: 24px 37px;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -60,7 +59,7 @@
 	color: #fff;
 }
 .find-form-wrapper .group-input .offer-btn {
-	background: #eab244;
+	background: #eab244 !important;
 }
 .find-form-wrapper .circle {
 	width: 10%;
@@ -98,6 +97,15 @@
 	background: #f0f0f0;
 }
 
+@media (max-width: 1320px){
+	.find-form-wrapper .circle-or {
+		margin: 10px auto;
+	}
+	.find-form-wrapper .group-input .find-btn {
+		margin: 0;
+		padding: 24px 21px;
+	}
+}
 @media (max-width: 1320px){
 	.find-form-wrapper .circle-or {
 		margin: 10px auto;
@@ -174,4 +182,35 @@
 	.find-btn {
 		width: 100%;
 	}
+}
+.circle-or {
+	width: 42px;
+	height: 42px;
+	border: 1px solid #d7dfe8;
+	position: relative;
+	border-radius: 50%;
+	padding: 10px;
+	padding-top: 10px;
+	font-family: "Rubik Medium", Fallback, sans-serif;
+	color: #b2c1cf;
+	font-size: 14px;
+	margin: 10px 14px;
+}
+.circle::before {
+	content: " ";
+	position: absolute;
+	width: 1px;
+	top: -25px;
+	left: 50%;
+	height: 35px;
+	background: #f0f0f0;
+}
+.circle::after {
+	content: " ";
+	position: absolute;
+	width: 1px;
+	bottom: -25px;
+	left: 50%;
+	height: 40px;
+	background: #f0f0f0;
 }

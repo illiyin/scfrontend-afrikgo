@@ -833,196 +833,11 @@
 
 
 
-/*FAQ page*/
-.faq {
-	padding: 65px 0;
-	background: #f3f3f3;
-}
-.faq-wrapper {
-	background: #fff;
-	margin-top: 68px;
-	padding: 68px 0;
-	min-height: 999px;
-}
-.faq-wrapper .search {
-	max-width: 750px;
-	margin: 0 auto;
-	padding: 0 32px;
-}
-.faq-wrapper .field {
-	margin-right: 20px;
-	float: left;
-	max-width: 530px;
-}
-.faq-wrapper .search-btn {
-	float: right;
-	width: 134px;
-	margin-right: 0;
-	font-family: "Rubik Medium", sans-serif;
-	color: #fff;
-	background: #2788e6;
-}
-.faq-wrapper .search:after {
-	content: "";
-  	display: table;
-  	clear: both;
-}
-@media (max-width: 992px){
-	.faq-wrapper .field {
-		width: 75%;
-	}
-	.faq-wrapper .search-btn {
-		width: 20%;
-		min-width: 130px;
-	}
-}
-@media (max-width: 712px){
-	.faq-wrapper .field {
-		width: 70%;
-	}
-	.faq-wrapper .search-btn {
-		width: 20%;
-		min-width: 130px;
-	}
-}
-@media (max-width: 612px){
-	.faq-wrapper .search {
-		width: 85%;
-	}
-	.faq-wrapper .field {
-		width: 100%;
-	}
-	.faq-wrapper .search-btn {
-		width: 100%;
-		min-width: 130px;
-	}
-}
 
-.faq hr {
-	margin: 45px 0 40px;
-	border-top: 1px solid #d8d8d8;
-}
-.faq-sidebar {
-	padding-left: 30px;
-}
-@media (max-width: 1200px){
-	.faq-sidebar {
-		padding-left: 0px;
-	}
-}
-.faq-sidebar li {
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	color: #909194;
-	font-size: 16px;
-	letter-spacing: .25px;
-	max-width: 225px;
-	padding: 18px 0;
-	border-bottom: 1px solid #d8d8d8;
-	list-style: none;
-	text-transform: uppercase;
-}
-@media (max-width: 768px) {
-	.faq-sidebar li {
-		max-width: 90%;
-	}
-	.faq-content {
-		padding: 0 60px;
-		margin: 0 auto;
-	}
-}
-.faq-sidebar li.active {
-	color: #2788e6;
-}
-.faq-sidebar span {
-	float: right;
-}
-@media (min-width: 991px){
-	.faq-panel-group {
-		min-height: 900px;
-	}
-}
-@media (max-width: 380px) {
-	.faq-panel-group span {
-		display: none;
-	}
-}
-.faq-panel-group span{
-	float: right;
-}
-.span-rotate {
-	transition: all .3s ease;
-	transform: rotate(90deg);
-}
-.span-unrotate {
-	transition: all .3s ease;
-	transform: rotate(0deg);
-}
-.faq-panel-group .panel-heading {
-	padding: 0;
-	font-size: 16px;
-	background: #fff;
-	font-family: "Rubik Medium", Fallback, sans-serif;
-    border-bottom: 1px solid #ddd;
-}
-.panel-heading a {
-	text-decoration: none;
-}
-.panel-heading h4 {
-	padding: 17px 0;
-	color: #4e565e;
-}
-.faq-panel-group .panel-default {
-	border:none;
-	background: #fff;
-	border-bottom: 1px solid transparent;
-	border-radius: 0;
-	box-shadow: none;
-}
-.faq-panel-group .panel-body {
-	color: #818181;
-	font-family: $font-family;
-	font-size: 16px;
-	line-height: 32px;
-}
-.faq-wrapper .faq-content {
-	border-left: 1px solid #d8d8d8;
-	padding-left: 20px;
-}
-@media (max-width: 768px) {
-	.faq-wrapper .faq-content {
-		width: calc(90% - 10px);
-		padding: 0;
-		padding-top: 60px;
-		padding-left: 55px;
-		margin: 0 auto;
-	}
-}
-@media (min-width: 1200px ){
-	.faq-wrapper .faq-content {
-		margin-left: -30px;
-		padding-left: 49px;
-	}
-}
-@media (min-width: 768px) and (max-width: 1200px){
-	.faq-panel-group {
-		padding-right: 20px;
-	}
-
-}
-@media (min-width: 768px) and (max-width: 992px){
-	.faq-sidebar ul {
-		padding-left: 10px;
-	}
-}
-@media (min-width: 830px) and (max-width: 992px){
-	.faq .container {
-		width: 820px;
-	}
-}
 
 /*Privacy, Cookie, Term*/
 .main-static {
-  background-color: #f3f3f3;
+  background-color: $putih4;
   padding: 74px 0;
 }
 .main-static ul {
@@ -1033,11 +848,11 @@
   list-style: none;
 }
 .main-static .konten {
-  background-color: #fff;
+  background-color: $putih;
   overflow-x: hidden;
   overflow-y: auto;
   height: 930px;
-  box-shadow: 0 2px 28px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 28px $hitam3;
   position: relative;
   margin: 0 auto;
   margin-top: 63px;
@@ -1054,7 +869,7 @@
   font-family: "Rubik Light", Fallback, helvetica, sans-serif;
   text-align: center;
   font-size: 42px;
-  color: #2788e6;
+  color: $biru;
   padding: 0;
   margin: 0;
   line-height: 50px;
@@ -1066,7 +881,7 @@
 .main-static p.static-title-text, .main-static p.head-title {
   font-family: "Rubik Medium", Fallback, sans-serif;
   font-size: 18px;
-  color: #909194;
+  color: $abu19;
 }
 .main-static p.static-title-text::before, .main-static p.head-title::before {
   content: counter(number) ". ";
@@ -1079,7 +894,7 @@
   font-size: 16px;
   font-family: $font-family;
   line-height: 28px;
-  color: #9d9d9d;
+  color: $abu20;
 }
 .main-static p.desc .text-underline{
   text-decoration: underline;
@@ -1118,9 +933,9 @@
   border-radius: 5px;
   text-align: center;
   font-family: 'Rubik Medium', Fallback, sans-serif;
-  background-color: #2788e6;
+  background-color: $biru;
   margin: 0;
-  color: white;
+  color: $putih1;
   font-weight: 100;
   font-size: 14px;
   max-width: 100%;
@@ -1132,7 +947,7 @@
   content: '';
   position: absolute;
   transform: translate(-50%,-50%) scale(0);
-  background-color: #1768b7;
+  background-color: $biru4;
   width: 350px;
   height: 350px;
   top: 50%;
@@ -1198,7 +1013,7 @@
   margin-left: 40px;
 }
 .main-static .text-color-primary{
-	color: #2788e6;
+	color: $biru;
 }
 .main-static .page7 p.head-title{
   margin-bottom: 20px
@@ -1350,7 +1165,7 @@
 	}
 }
 .underlined-static{
-	text-decoration: underline #ccc;
+	text-decoration: underline $abu5;
 }
 @media (min-width:680px) and (max-width:992px){
 	.homepage-hero .header .bg{

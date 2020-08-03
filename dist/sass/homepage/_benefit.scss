@@ -5,7 +5,7 @@
 .section-title {
 	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 42px;
-	color: #2788e6;
+	color: $biru;
 }
 .benefit .section-title {
 	margin-bottom: 100px;
@@ -20,13 +20,13 @@
 	font-family: "Rubik Light", Fallback, sans-serif;
 	font-size: 16px;
 	line-height: 27px;
-	color: #767676;
+	color: $abu3;
 	letter-spacing: .25px;
 }
 .benefit .benefit-title {
 	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
-	color: #9daebf;
+	color: $abu4;
 	margin-bottom: 15px;
 	text-transform: uppercase;
 	letter-spacing: .25px;
