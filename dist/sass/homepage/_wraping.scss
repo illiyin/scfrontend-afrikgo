@@ -1,5 +1,5 @@
 .find-form {
-	background: url(images/Pattern1.jpg) no-repeat;
+	background: url(../images/Pattern1.jpg) no-repeat;
 	background-size: 100%;
 	background-position: 0 100%;
 }
@@ -9,9 +9,9 @@
 	}
 }
 .find-form-wrapper {
-	background: $putih;
+	background: #fff;
 	padding: 25px 24px 25px 15px;
-	box-shadow: 0px 0px 40px -2px $abu10;
+	box-shadow: 0px 0px 40px -2px rgba(218,218,218, 0.45);
 	margin-bottom: 42px;
 }
 .wraping {
@@ -21,61 +21,46 @@
 	justify-content: flex-start;
 }
 
-.find-form-wrapper .find__group-input {
+.find-form-wrapper .group-input {
 	position: relative;
-	margin: 0 8px;
+	margin: 0 9px;
 	width:18%;
 }
-
-.field {
-	font-family: "Rubik Regular", Fallback, sans-serif;
-	font-size: 15px;
-	color: $abu7;
-	padding: 16px 22px;
-	border-radius: 5px;
-	border: 1px solid $putih3;
-	width: calc(100%);
-	margin-bottom: 22px;
-	line-height: auto;
-}
-.find-form-wrapper .find__group-input .field{
-	padding-left: 45px;
-}
-
 .find-form-wrapper .field {
 	margin-bottom: 0;
 	padding-top: 22px;
 	padding-bottom: 22px;
-	background: $putih2;
+	background: #fdfdfd;
 }
 @media (min-width: 1200px) {
-	.find-form-wrapper .find__group-input .field {
+	.find-form-wrapper .field {
 		max-width: 204px;
 	}
 }
-
-.find-form-wrapper .find__group-input span {
-	position: absolute;				
+.find-form-wrapper .group-input .field {
+	padding-left: 45px;
+}
+.find-form-wrapper .group-input span {
+	position: absolute;
 	top: 22px;
 	left: 15px;
 }
-.find-form-wrapper .find__group-input:nth-child(4),
-.find-form-wrapper .find__group-input:nth-child(5),
-.find-form-wrapper .find__group-input:nth-child(6) {
+.find-form-wrapper .group-input:nth-child(4),
+.find-form-wrapper .group-input:nth-child(5),
+.find-form-wrapper .group-input:nth-child(6) {
 	width: initial;
 }
-.find-form-wrapper .find__group-input .find-btn {
+.find-form-wrapper .group-input .find-btn {
 	width: initial;
 	padding: 24px 37px;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: "Rubik Medium", Fallback, sans-serif;
 	line-height: initial;
-	background: $biru;
-	color: $putih;
+	color: #fff;
 }
-.find-form-wrapper .find__group-input .offer-btn {
-	background: $orange;
+.find-form-wrapper .group-input .offer-btn {
+	background: #eab244;
 }
 .find-form-wrapper .circle {
 	width: 10%;
@@ -84,13 +69,13 @@
 .circle-or {
 	width: 42px;
 	height: 42px;
-	border: 1px solid $putih3;
+	border: 1px solid #d7dfe8;
 	position: relative;
 	border-radius: 50%;
 	padding: 10px;
 	padding-top: 10px;
 	font-family: "Rubik Medium", Fallback, sans-serif;
-	color: $abu2;
+	color: #b2c1cf;
 	font-size: 14px;
 	margin: 10px 14px;
 }
@@ -101,7 +86,7 @@
 	top: -25px;
 	left: 50%;
 	height: 35px;
-	background: $putih4;
+	background: #f0f0f0;
 }
 .circle::after {
 	content: " ";
@@ -110,35 +95,35 @@
 	bottom: -25px;
 	left: 50%;
 	height: 40px;
-	background: $putih4;
+	background: #f0f0f0;
 }
 
 @media (max-width: 1320px){
 	.find-form-wrapper .circle-or {
 		margin: 10px auto;
 	}
-	.find-form-wrapper .find__group-input .find-btn {
+	.find-form-wrapper .group-input .find-btn {
 		margin: 0;
 		padding: 24px 21px;
 	}
 }
 @media (max-width: 1091px) {
-	.find-form-wrapper .find__group-input:nth-child(1),
-	.find-form-wrapper .find__group-input:nth-child(2),
-	.find-form-wrapper .find__group-input:nth-child(3) {
+	.find-form-wrapper .group-input:nth-child(1),
+	.find-form-wrapper .group-input:nth-child(2),
+	.find-form-wrapper .group-input:nth-child(3) {
 		width: 30.5%;
 		margin-bottom: 20px;
 	}
-	.find-form-wrapper .find__group-input:nth-child(4),
-	.find-form-wrapper .find__group-input:nth-child(6) {
+	.find-form-wrapper .group-input:nth-child(4),
+	.find-form-wrapper .group-input:nth-child(6) {
 		width: 41%;
 		margin-bottom: 20px;
 	}
-	.find-form-wrapper .find__group-input:nth-child(5){
+	.find-form-wrapper .group-input:nth-child(5){
 		width: 10%;
 	}
 
-	.find-form-wrapper .find__group-input .find-btn {
+	.find-form-wrapper .group-input .find-btn {
 		margin: 0;
 		padding: 24px 21px;
 		width: 100%;
@@ -150,35 +135,35 @@
 }
 
 @media (max-width: 792px){
-	.find-form-wrapper .find__group-input:nth-child(1),
-	.find-form-wrapper .find__group-input:nth-child(2),
-	.find-form-wrapper .find__group-input:nth-child(3) {
+	.find-form-wrapper .group-input:nth-child(1),
+	.find-form-wrapper .group-input:nth-child(2),
+	.find-form-wrapper .group-input:nth-child(3) {
 		width: 30%;
 		margin-bottom: 20px;
 	}
-	.find-form-wrapper .find__group-input:nth-child(4),
-	.find-form-wrapper .find__group-input:nth-child(6) {
+	.find-form-wrapper .group-input:nth-child(4),
+	.find-form-wrapper .group-input:nth-child(6) {
 		width: 40%;
 		margin-bottom: 20px;
 	}
-	.find-form-wrapper .find__group-input:nth-child(5){
+	.find-form-wrapper .group-input:nth-child(5){
 		width: 9%;
 		padding-left: 5px;
 	}
 }
 @media (max-width: 792px){
-	.find-form-wrapper .find__group-input:nth-child(1),
-	.find-form-wrapper .find__group-input:nth-child(2),
-	.find-form-wrapper .find__group-input:nth-child(3) {
+	.find-form-wrapper .group-input:nth-child(1),
+	.find-form-wrapper .group-input:nth-child(2),
+	.find-form-wrapper .group-input:nth-child(3) {
 		width: 100%;
 		margin-bottom: 20px;
 	}
-	.find-form-wrapper .find__group-input:nth-child(4),
-	.find-form-wrapper .find__group-input:nth-child(6) {
+	.find-form-wrapper .group-input:nth-child(4),
+	.find-form-wrapper .group-input:nth-child(6) {
 		width: 100%;
 		margin-bottom: 20px;
 	}
-	.find-form-wrapper .find__group-input:nth-child(5){
+	.find-form-wrapper .group-input:nth-child(5){
 		width: 100%;
 		padding-left: 5px;
 		margin-bottom: 20px;

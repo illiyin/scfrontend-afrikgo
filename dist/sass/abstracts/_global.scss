@@ -1,19 +1,1591 @@
 /*GLOBAL*/
 html,
 body {
-  padding: 0;
-  -webkit-font-smoothing: antialiased !important; 
+	padding: 0;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
 }
 
-h1, h2, h3, h4, h5, h6,
-img {
-  padding: 0;
-  margin: 0; }
+body {
+/*	background: #fefefe;*/
+}
 
+h1,h2,h3,h4,h5,h6,
+img {
+	padding: 0;
+	margin: 0;
+}
 a:hover {
-  text-decoration: none; }
+	text-decoration: none;
+}
 
 
 .container {
-  transition: all .6s ease; }
-
+	transition: all .6s ease;
+}
+/* --- Font Smoothing --- */
+html {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+  }
+  
+  /* --- Radio Buttons & Checkboxes --- */
+  .af-form input[type="checkbox"],
+  .af-form input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+  }
+  .af-form .check-content{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #767676;
+  }
+  .af-form input[type="checkbox"] + label{
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+  }
+  .af-form input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: -3px 4px 0 0;
+	vertical-align: middle;
+	background: url(../images/box-empty.png) left top no-repeat;
+	cursor: pointer;
+  }
+  .af-form input[type="checkbox"]:checked + label span {
+	background: url(../images/box-checked.png) left top no-repeat;
+  }
+  .af-form input[type="radio"] + label span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: -3px 4px 0 0;
+	vertical-align: middle;
+	background: url(../images/radio-empty.png) left top no-repeat;
+	cursor: pointer;
+  }
+  .af-form input[type="radio"]:checked + label span {
+	background: url(../images/radio-checked.png) left top no-repeat;
+  }
+  
+  /* - White Check - */
+  .af-form .white-check input[type="checkbox"] + label span {
+	width: 27px;
+	height: 26px;
+	background: url(../images/box-checkbox-1.png) left top no-repeat;
+  }
+  .af-form .white-check input[type="checkbox"]:checked + label span {
+	background: url(../images/box-checkbox-1-checked.png) left top no-repeat;
+  }
+  
+  /* - Radio Button - */
+  .af-form .white-check input[type="radio"] + label span {
+	width: 30px;
+	height: 30px;
+	background: url(../images/box-radio-empty.png) left top no-repeat;
+  }
+  .af-form .white-check input[type="radio"]:checked + label span {
+	background: url(../images/box-radio-checked.png) left top no-repeat;
+  }
+  
+  /* - Additional Label - */
+  .af-form .check-content .add-label{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	padding-left: 26px;
+	width: 100%;
+	max-width: 414px;
+  }
+  .af-form .white-check .add-label{
+	padding-left: 35px;
+  }
+  
+  
+  /* --- Buttons --- */
+  .btn-afg{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 14px;
+	line-height: normal;
+	letter-spacing: 0;
+	color: #fff;
+	text-transform: uppercase;
+  }
+  .btn-blue{
+	border: none;
+	background: #2788e6;
+	box-shadow: none;
+  }
+  .btn-blue:hover,
+  .btn-blue:focus,
+  .btn-blue.focus{
+	color: #fff;
+  }
+  
+  
+  /* --- Filter --- */
+  .input-filter p{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: 0;
+	color: #44484c;
+  }
+  .input-filter .filter-value{
+	color: #2788e6;
+  }
+  .input-filter .af-icon{
+	margin-right: 10px;
+	top: -2px;
+	position: relative;
+  }
+  .input-filter .slider.slider-horizontal{
+	margin-bottom: 0;
+  }
+  
+  
+  /* --- Panel Action --- */
+  .panel-action{
+	-webkit-box-shadow: 0px 0px 21.6px 5.4px rgba(218, 218, 218, 0.45);
+	-moz-box-shadow: 0px 0px 21.6px 5.4px rgba(218, 218, 218, 0.45);
+	box-shadow: 0px 0px 21.6px 5.4px rgba(218, 218, 218, 0.45);
+	border: none;
+	padding: 25px 20px;
+	margin-bottom: 40px;
+  }
+  .panel-action .panel-body{
+	padding: 0;
+  }
+  .panel-action .pa-title{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #c0cedb;
+	text-transform: uppercase;
+  }
+  .pa-center{
+	text-align: center;
+  }
+  .pa-center .btn{
+	display: inline-block;
+  }
+  .pa-center img{
+	display: inline-block;
+  }
+  
+  
+  /* --- Icons --- */
+  .ico-dollar{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/Icon-Dollar.png) no-repeat;
+	width: 22px;
+	height: 22px;
+  }
+  .ico-clock{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/Icon-Time.png) no-repeat;
+	width: 20px;
+	height: 20px;
+  }
+  .ico-check{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/Icon-Check.png) no-repeat;
+	width: 30px;
+	height: 30px;
+  }
+  .ico-arrow-down{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-arrow-down.png) no-repeat;
+	width: 15px;
+	height: 9px;
+  }
+  .ico-arrow-right{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-arrow-right.png) no-repeat;
+	width: 14px;
+	height: 12px;
+  }
+  .ico-thunder{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-thunder.png) no-repeat;
+	width: 11px;
+	height: 21px;
+  }
+  .ico-checkbox{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/box-checked.png) no-repeat;
+	width: 16px;
+	height: 16px;
+  }
+  .ico-pin{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/Icon-Location.png) no-repeat;
+	width: 18px;
+	height: 23px;
+  }
+  .ico-calendar{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/Icon-Date.png) no-repeat;
+	width: 20px;
+	height: 18px;
+  }
+  .ico-full-clock{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-clock.png) no-repeat;
+	width: 20px;
+	height: 20px;
+  }
+  .ico-briefcase{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-briefcase.png) no-repeat;
+	width: 21px;
+	height: 19px;
+  }
+  .ico-briefcase-small{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-briefcase-small.png) no-repeat;
+	width: 20px;
+	height: 17px;
+  }
+  .ico-reload{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-reload.png) no-repeat;
+	width: 20px;
+	height: 22px;
+  }
+  .ico-people-group{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-group.png) no-repeat;
+	width: 26px;
+	height: 14px;
+  }
+  .ico-seat{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-seats.png) no-repeat;
+	width: 18px;
+	height: 26px;
+  }
+  .ico-building{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/icon-building.png) no-repeat;
+	width: 20px;
+	height: 20px;
+  }
+  
+  
+  /* --- Custom Text ---*/
+  a{
+	color: #2788e6;
+  }
+  a:active,
+  a:focus{
+	text-decoration: none;
+	outline: none;
+  }
+  .text-bold{
+	font-family: 'Rubik Medium', Fallback, sans-serif; 
+  }
+  .text-blue{
+	color: #2788e6;
+  }
+  
+  
+  /* --- Plus Minus Input Field --- */
+  .field-counter{
+	width: 135px;
+	height: auto;
+	border-radius: 4px;
+	z-index: 99;
+	margin-bottom: 0;
+  }
+  .field-counter:before,
+  .field-counter:after{
+	display: block;
+	content: "";
+	clear: both;
+  }
+  .field-counter .counter-field{
+	width: 76%;
+	float: left;
+	border: 1px solid #d7dfe8;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	text-align: left;
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #2788e6;
+	background: #f9f9f9;
+  }
+  .field-counter .counter-field > input.form-control{
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: 0;
+	border: none;
+	box-shadow: none;
+	display: block;
+	border-radius: 0;
+	height: 55px;
+	padding: 0;
+	color: #2788e6;
+	background: #f9f9f9;
+  }
+  .field-counter .counter{
+	width: 24%;
+	float: left;
+	display: block;
+  }
+  .field-counter .counter-up,
+  .field-counter .counter-down{
+	height: auto;
+	padding: 5.5px 8px;
+	border: none;
+	line-height: normal;
+	border-radius: 0;
+	width: 100%;
+	display: block;
+	right: -1px;
+	border: 1px solid #d7dfe8;
+	z-index: 10;
+	color: #2788e6;
+	border-left: none;
+	background: #f9f9f9;
+  }
+  .field-counter .counter .counter-up span.fa,
+  .field-counter .counter .counter-down span.fa{
+	left: auto;
+	top: 1px;
+  }
+  .field-counter .counter-up:focus,
+  .field-counter .counter-down:focus{
+	outline: none;
+	outline-offset: 0;
+  }
+  .field-counter .counter-up{
+	border-bottom: 1px solid #cacaca;
+	border-top-right-radius: 4px;
+  }
+  .field-counter .counter-up .fa{
+	position: relative;
+	top: 3px;
+  }
+  .field-counter .counter-down{
+	border-bottom-right-radius: 4px;
+	border-top: none;
+  }
+  .field-counter .counter-down .fa{
+	position: relative;
+	top: -3px;
+  }
+  
+  
+  /* --- Find A Ride --- */
+  .ride-form{
+	margin-top: 40px;
+  }
+  .ride-form .pagetitle{
+	font-size: 45px;
+	margin-bottom: 30px;
+  }
+  .ride-form .find-form-wrapper{
+	border-radius: 6px;
+	max-width: 928px;
+	padding-left: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  }
+  .ride-form .find-form-wrapper .group-input{
+	width: 22.5%;
+  }
+  .ride-form .find-form-wrapper .switch{
+	width: 3%;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+  }
+  .ride-form .switch img{
+	display: inline-block;
+  }
+  .ride-form .find-form-wrapper .group-input .field{
+	max-width: none;
+  }
+  .ride-form .find-form-wrapper .ride-btn{
+	width: 19%;
+  }
+  .ride-form .find-form-wrapper .group-input .find-btn{
+	width: 100%;
+  }
+  
+  .ride-content{
+	margin-top: 42px;
+  }
+  .ride-content .panel-action{
+	padding-bottom: 10px;
+  }
+  .ride-content .panel-body .input-filter{
+	padding-top: 25px;
+	padding-bottom: 25px;
+  }
+  .ride-content .panel-body .input-filter.top{
+	border-bottom: 1px solid #ebebeb;
+  }
+  .ride-content .panel-info{
+	padding: 5px 40px;
+  }
+  .ride-content .panel-info img{
+	margin-top: 22px;
+	margin-bottom: 18px;
+  }
+  .ride-content .panel-info .pa-title{
+	margin-bottom: 14px;
+  }
+  .ride-content .btn-afg{
+	padding: 14px 20px;
+	font-size: 13px;
+	margin-bottom: 25px;
+  }
+  
+  .ride-list .ride-item{
+	padding: 8px 24px 0 18px;
+  }
+  .ride-item .ride-img{
+	position: relative;
+	display: block;
+	margin-right: 14px;
+	width: 93px;
+	height: 93px;
+	border-radius: 100%;
+	position: relative;
+	border: 1px solid #ebebeb;
+  }
+  .ride-img img{
+	width: 93px;
+	height: 93px;
+	border-radius: 100%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+  }
+  .ride-img .af-icon{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+  }
+  .ride-item .content-header{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 25px;
+	line-height: normal;
+	letter-spacing: -0.023em;
+	color: #2788e6;
+	margin-bottom: 4px;
+  }
+  .ride-item .media-body .content-city{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #44484c;
+	text-transform: uppercase;
+  }
+  .ride-item .media-body p{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #767676;
+	margin-bottom: 2px;
+  }
+  .ride-item .price-text{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 32px;
+	line-height: normal;
+	letter-spacing: -0.023em;
+	color: #2788e6;
+  }
+  .ride-item .right-content{
+	text-align: right;
+	padding-top: 20px;
+  }
+  .ride-item .media-body .seats-avail{
+	color: #65ac26;
+  }
+  .ride-item .ride-item-separator{
+	margin-top: 22px;
+	margin-bottom: 22px;
+	border-top: 1px solid #ebebeb;
+  }
+  
+  .ride-paging{
+	text-align: right;
+	margin-right: 14px;
+  }
+  .ride-paging .pagination{
+	margin-top: 0;
+  }
+  .ride-paging .pagination > li > a,
+  .ride-paging .pagination > li > span{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #878787;
+	padding: 8px 16px;
+	margin-right: 10px;
+	margin-left: 0;
+	border-radius: 4px;
+	border-color: #cccccc;
+  }
+  .ride-paging .pagination > .active > a,
+  .ride-paging .pagination > .active > span,
+  .ride-paging .pagination > .active > a:hover,
+  .ride-paging .pagination > .active > span:hover,
+  .ride-paging .pagination > .active > a:focus,
+  .ride-paging .pagination > .active > span:focus{
+	color: #fff;
+	background-color: #2788e6;
+	border-color: #2788e6;
+  }
+  
+  .ride-routes{
+	padding-top: 50px;
+  }
+  .ride-routes .section-title{
+	margin-bottom: 60px;
+  }
+  .ride-routes .popular-btn a{
+	display: inline-block;
+  }
+  
+  /* - Create Alert Modal - */
+  .create-alert{
+	padding-right: 0 !important;
+  }
+  .create-alert .modal-dialog{
+	width: 100%;
+	max-width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  .create-alert .modal-content{
+	padding: 0 62px;
+  }
+  .create-alert .modal-header{
+	padding-top: 36px;
+	padding-bottom: 30px;
+  }
+  .create-alert .modal-title{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 35px;
+	line-height: normal;
+	letter-spacing: -0.023em;
+	color: #2788e6;
+  }
+  .create-alert .modal-body{
+	padding: 36px 0 0;
+	text-align: left;
+  }
+  .create-alert .route-item{
+	padding: 0;
+	margin-bottom: 0;
+	box-shadow: none;
+	border-radius: 0;
+  }
+  .ride-content .panel-body .create-alert .input-filter{
+	padding-top: 0;
+	padding-bottom: 0;
+  }
+  .create-alert .group-input{
+	position: relative;
+  }
+  .create-alert .group-input .field{
+	margin-bottom: 0;
+	padding-left: 45px;
+  }
+  .create-alert .group-input span {
+	position: absolute;
+	top: 16px;
+	left: 15px;
+  }
+  .create-alert .group-input span img{
+	margin-top: 0;
+	margin-bottom: 0;
+  }
+  .create-alert .group-input .glyphicon-envelope{
+	font-size: 24px;
+	color: #2788e6;
+  }
+  .create-alert .submit-alert{
+	text-align: center;
+  }
+  .ride-content .submit-alert .btn-afg{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	width: 100%;
+	max-width: 316px;
+  }
+  .create-alert .af-form .alert-filter{
+	margin-bottom: 33px;
+  }
+  .create-alert .af-form .alert-field{
+	margin-bottom: 22px;
+  }
+  .create-alert .check-content{
+	margin-bottom: 30px;
+  }
+  
+	
+  /* --- Ride Detail --- */
+  .ride-detail{
+	margin-bottom: 140px;
+  }
+  .ride-detail p{
+	margin-bottom: 0;
+  }
+  /* - Top Left Panel - */
+  .rd-panel .rdp-header{
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ebebeb;
+	position: relative;
+  }
+  
+  .rd-panel .rdp-price{
+	padding-bottom: 5px;
+  }
+  .rdp-price .price-content{
+	position: relative;
+	padding-top: 3px;
+	padding-bottom: 3px;
+  }
+  .rdp-price > .price-content{
+	padding-top: 0;
+  }
+  .rd-panel .price-caption{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 14px;
+	line-height: 33px;
+	letter-spacing: 0;
+	color: #c0cedb;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	left: 0;
+	content: "";
+  }
+  .rd-panel .price-value{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 15px;
+	letter-spacing: 0;
+	line-height: 27px;
+	color: #44484c;
+	text-align: right;
+	display: block;
+	width: 100%;
+  }
+  .rd-panel .rdp-title{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 27px;
+	color: #c0cedb;
+  } 
+  
+  .rd-panel .rdp-collapse{
+	font-size: 35px;
+	line-height: 27px;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 10px;
+  }
+  .rd-panel .rdp-collapse[aria-expanded="true"]{
+	border-bottom-color: #ebebeb;
+  }
+  .rdp-collapse .decimal{
+	font-size: 20px;
+  }
+  .rdp-collapse .af-icon{
+	position: relative;
+	top: -2px;
+  }
+  
+  .rd-panel .rdp-seats{
+	padding-top: 31px;
+	padding-bottom: 31px;
+	text-align: center;
+	border-bottom: 1px solid #ebebeb;
+  }
+  .rdp-seats .rdp-title{
+	margin-bottom: 14px;
+  }
+  .rdp-seats .seats-passenger{
+	margin-bottom: 18px;
+  }
+  .rdp-seats .seats-passenger li{
+	width: 70px;
+	height: 70px;
+	background: #ebebeb;
+	border: 1px dashed #44484c;
+	border-radius: 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  .rdp-seats .seats-passenger li.on-board{
+	background: #fff;
+  }
+  .seats-passenger img{
+	position: absolute;
+	margin: 5px auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  }
+  .rdp-seats .seats-available{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #44484c;
+  }
+  
+  .rd-panel .rdp-form{
+	padding-top: 22px;
+  }
+  .rdp-form .rdp-form-info{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #767676;
+  }
+  .rdp-form-info .af-icon{
+	margin-left: 8px;
+	margin-right: 12px;
+  }
+  .rdp-form .field{
+	margin-bottom: 0;
+  }
+  .rdp-form .btn-afg{
+	font-size: 14px;
+	width: 100%;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 0;
+  }
+  
+  /* - Bottom Left Panel - */
+  .rd-panel .rdp-lg-content{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ebebeb;
+  }
+  .rd-panel .media .content-p{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	color: #44484c;
+	margin-bottom: 0;
+  }
+  
+  .rd-panel .rdp-mid-content{
+	padding-top: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #ebebeb;
+  }
+  .rd-panel .rdp-verified p{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: 27px;
+	letter-spacing: 0;
+  }
+  .rdp-verified .af-icon{
+	position: relative;
+	top: -2px;
+	margin-right: 6px;
+  }
+  
+  .rd-panel .rdp-min-content{
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #ebebeb;
+  }
+  .rd-panel .rdp-min-content:last-child{
+	border-bottom: none;
+  }
+  .rdp-add-info h4{
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 6px;
+	color: #767676;
+  }
+  .rdp-add-info p{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #767676;
+  }
+  .rdp-add-info label{
+	font-weight: normal;
+	display: inline-block;
+  }
+  .rdp-add-info label.left{
+	width: 35%;
+	margin-right: -5px;
+  }
+  .rdp-add-info label.right{
+	width: 50%;
+  }
+  .rdp-add-info a{
+	padding-top: 10px;
+	display: block;
+  }
+  
+  /* - Ride Detail Content - */
+  .ride-detail .rd-content{
+	padding-left: 40px;
+  }
+  .rd-content .rdc-header{
+	padding-top: 24px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ebebeb;
+  }
+  .rd-content .rdc-header .header-content{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 25px;
+	line-height: normal;
+	letter-spacing: -0.023em;
+	color: #44484c;
+  }
+  .rdc-header .caption-header{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0;
+	margin-left: 12px;
+  }
+  .rdc-header .af-icon{
+	position: relative;
+	top: -2px;
+	margin-left: 4px;
+	margin-right: 4px;
+  }
+  
+  .rd-content .rdc-schedule{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ebebeb;
+  }
+  .rdc-schedule .schedule-content{
+	margin-bottom: 20px;
+  }
+  .rdc-schedule .schedule-label{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: 0;
+	color: #44484c;
+  }
+  .rdc-schedule .schedule-value{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: 0;
+	color: #44484c;
+  }
+  .schedule-value .af-icon{
+	margin-right: 10px;
+	width: 28px;
+	height: 24px;
+	background-position: center center;
+  }
+  .schedule-value .ico-calendar,
+  .schedule-value .ico-briefcase{
+	background-position: top center;
+  }
+  
+  .rd-content .rdc-rider{
+	padding-top: 28px;
+	padding-bottom: 28px;
+  }
+  .rdc-rider .media-body{
+	padding-top: 12px;
+  }
+  .rdc-rider .ride-item .media-body p{
+	margin-bottom: 30px;
+  }
+  .rdc-rider .btn-afg{
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	max-width: 270px;
+  }
+  
+  /* - Ride Detail - */
+  .ride-route{
+	padding-right: 0 !important;
+  }
+  .ride-route .modal-header{
+	padding: 28px 38px;
+	border-bottom: none;
+  }
+  .ride-route .modal-title{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 25px;
+	line-height: normal;
+	letter-spacing: -0.023em;
+	color: #44484c;
+  }
+  .ride-route .modal-body{
+	padding: 0;
+  }
+  
+  
+  /* --- Offer a Ride --- */
+  .offer-form{
+	margin-top: 0;
+	padding-top: 40px;
+	background: none;
+  }
+  .offer-ride{
+	background: url(../images/bg-top-new.png) repeat-x;
+	background-size: auto;
+	background-position: 0 70px;
+  }
+  .offer-ride .ride-steps{
+	position: relative;
+  }
+  .ride-steps .form-container{
+	padding-left: 55px;
+	padding-right: 55px;
+  }
+  
+  .ride-steps .form-subtitle{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #415161;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+  }
+  .ride-steps .form-subtitle.has-caption{
+	margin-bottom: 0;
+  }
+  .ride-steps .form-subtitle .form-number{
+	width: 49px;
+	height: 49px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #d7dfe8;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 100%;
+	margin-right: 14px;
+  }
+  .ride-steps .form-item{
+	padding-bottom: 40px;
+  }
+  .ride-steps .form-group{
+	margin-left: 68px;
+	margin-right: 16px;
+	position: relative;
+	margin-bottom: 20px;
+  }
+  .ride-steps .form-group .field{
+	margin-bottom: 0;
+	padding-left: 45px;
+	background: rgba(249, 249, 249, 0.25);
+	border-color: #d7dfe8;
+	border-radius: 6px;
+  }
+  .ride-steps .form-group span {
+	position: absolute;
+	top: 16px;
+	left: 15px;
+  }
+  .ride-steps .form-caption{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 0;
+	color: #767676;
+	margin-left: 68px;
+  }
+  .ride-steps .form-left{
+	padding-left: 0;
+  }
+  .ride-steps .form-right{
+	padding-right: 0;
+  }
+  .ride-steps .form-link{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: 0;
+  }
+  .ride-steps .form-group .form-right span{
+	left: 30px;
+  }
+  .ride-steps.af-form input[type="checkbox"] + label span{
+	margin-top: -10px;
+	left: auto;
+  }
+  .ride-steps .check-content .check-label{
+	position: relative;
+	top: auto;
+	left: 10px;
+  }
+  .ride-steps .stop-over .form-caption{
+	margin-bottom: 36px;
+  }
+  .ride-steps .stop-over .field{
+	margin-bottom: 24px;
+  }
+  .ride-steps .form-last{
+	border-bottom: 1px solid #e9ecee;
+  }
+  
+  .ride-steps.wizard > .actions{
+	position: absolute;
+	top: auto;
+	bottom: 70px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	content: "";
+  }
+  
+  /* - Ride Details - */
+  .ride-steps .field-counter .counter-field{
+	position: relative;
+	background: rgba(249, 249, 249, 0.25);
+  }
+  .ride-steps .field-counter .counter-field > input.form-control{
+	border: none;
+	padding-left: 10px;
+	background: rgba(249, 249, 249, 0.25);
+  }
+  .ride-steps .field-counter .counter-field > .fa-dollar{
+	left: 21px;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	margin: auto;
+	width: 8px;
+	height: 14px;
+  }
+  .ride-steps .field-counter .counter-up,
+  .ride-steps .field-counter .counter-down{
+	background: rgba(249, 249, 249, 0.25);
+  }
+  .steps-detail .form-group{
+	margin-bottom: 15px;
+  }
+  .steps-detail .field-counter{
+	margin-bottom: 0;
+  }
+  .steps-detail .form-group .form-subtitle{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	margin-bottom: 0;
+	text-transform: none;
+	padding-left: 36px;
+	padding-top: 16px;
+  }
+  .steps-detail .form-group .form-subtitle .af-icon{
+	top: 14px;
+	left: 0;
+	bottom: 0;
+	right: auto;
+	margin: auto;
+  }
+  .steps-detail .check-content{
+	font-family: 'Rubik Regular', Fallback, sans-serif;
+	color: #415161;
+  }
+  .steps-detail .check-content .add-label{
+	color: #767676;
+	max-width: none;
+  }
+  .steps-detail .or-detail .form-item{
+	padding-bottom: 15px;
+  }
+  .steps-detail .or-detail textarea.field{
+	padding-left: 22px;
+	min-height: 150px;
+  }
+  .steps-detail .or-detail textarea.field::placeholder{
+	color: #c1cdd9;
+  }
+  .steps-detail .or-detail .form-caption{
+	margin-bottom: 30px;
+  }
+  .steps-detail .or-detail .select-field{
+	padding: 0;
+  }
+  .steps-detail .or-detail select{
+	width: 100%;
+	padding: 16px 22px 16px 45px;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url('../images/icon-arrow-down-blue.png') no-repeat;
+	background-position: 96% center;
+  }
+  .steps-detail .or-terms .check-label{
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+	margin-left: 10px;
+	position: relative;
+	top: 4px;
+  }
+  
+  /* - Finishing tab - */
+  .steps-finish .form-item{
+	margin-left: 45px;
+	margin-right: 45px;
+  }
+  .steps-finish .form-subtitle{
+	text-align: center;
+  }
+  .steps-finish .form-group{
+	width: 100%;
+	max-width: 456px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  .ride-steps .steps-finish .form-group .field{
+	padding-left: 22px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #d7dfe8;
+  }
+  .ride-steps .steps-finish .form-group .btn-afg{
+	width: 100%;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border: none;
+  }
+  .ride-steps .content .steps-finish .check-content label{
+	margin: 0;
+  }
+  .ride-steps .steps-finish .check-content input[type=checkbox]{
+	margin-top: 0;
+  }
+  .ride-steps .steps-finish .form-group span{
+	top: 14px;
+  }
+  .ride-steps .steps-finish .check-content .add-label{
+	padding-left: 16px;
+	top: 0;
+  }
+  .ride-steps .steps-finish .finish-top{
+	border-bottom: 1px solid #eee;
+  }
+  .ride-steps .steps-finish .finish-top .form-right{
+	line-height: 27px;
+	text-align: right;
+  }
+  
+  .wizard > .content > .body.steps-finish{
+	padding-bottom: 55px;
+  }
+  .steps-finish .finish-bottom{
+	padding-top: 60px;
+	padding-bottom: 0;
+  }
+  .steps-finish .finish-bottom .top-subtitle{
+	margin-bottom: 25px;
+  }
+  .steps-finish .finish-bottom .form-subtitle{
+	margin-bottom: 0;
+  }
+  .steps-finish .form-caption{
+	margin-left: 0;
+	text-align: center;
+	width: 75%;
+	margin: auto;
+  }
+  .steps-finish .form-left{
+	padding-right: 10px;
+  }
+  .steps-finish .form-right{
+	padding-left: 10px;
+  }
+  .steps-finish .finish-bottom .check-content{
+	width: 120px;
+	position: relative;
+  }
+  .steps-finish .finish-bottom .check-content .add-label{
+	width: 120px;
+	padding-left: 0;
+	margin-left: 24px;
+  }
+  .steps-finish .finish-bottom .check-content label span{
+	top: 2px;
+	left: 0;
+  }
+  .steps-finish .finish-bottom .check-content input[type=radio]{
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	margin-top: 0;
+  }
+  
+  /* - Success - */
+  .success-steps{
+	padding-top: 300px;
+  }
+  .success-steps .success-panel{
+	width: 100%;
+	max-width: 778px;
+	padding: 50px 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+  }
+  .success-steps .success-title{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0;
+	color: #415161;
+	margin-bottom: 55px;
+	text-transform: uppercase;
+  }
+  .success-steps .success-thumbnail{
+	margin-bottom: 22px;
+	height: 68px;
+  }
+  .success-steps .success-thumbnail img{
+	display: inline-block;
+  }
+  .success-steps .success-subtitle{
+	font-family: 'Rubik Medium', Fallback, sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	letter-spacing: 0;
+	color: #2788e6;
+	margin-bottom: 16px;
+  }
+  .success-steps .success-desc{
+	font-family: 'Rubik Light', Fallback, sans-serif;
+	font-size: 14px;
+	line-height: 23px;
+	letter-spacing: 0;
+	color: #767676;
+  }
+  .success-steps .success-center{
+	padding-left: 0;
+	padding-right: 0;
+  }
+  
+  
+  @media screen and (max-width: 991px){
+	/* --- Find A Ride --- */
+	.ride-form .find-form-wrapper{
+		width: 100%;
+	}
+	.ride-form .find-form-wrapper .input-leaving,
+	.ride-form .find-form-wrapper .input-going{
+		width: 43.8%;
+	}
+	.ride-form .find-form-wrapper .switch{
+		width: 4.3%;
+	}
+	.ride-form .find-form-wrapper .input-date{
+		width: 100%;
+	}
+	.ride-form .find-form-wrapper .ride-btn{
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+	}
+	
+	/* --- Ride Detail --- */
+	.rdc-schedule .schedule-label{
+		margin-bottom: 5px;
+	}
+	.schedule-value .af-icon{
+		margin-right: 0;
+	}
+	.schedule-value .ico-pin{
+		background-position: top center;
+	}
+	.schedule-value .ico-briefcase{
+		margin-top: 8px;
+		position: relative;
+		top: -4px;
+	}
+	.rdp-add-info label{
+		display: inline;
+	}
+	.rdp-add-info label.left{
+		width: auto;
+		margin-right: 0;
+	}
+	.rdp-add-info label.right{
+		width: auto;
+	}
+	
+  }
+  @media screen and (max-width: 767px){
+	/* --- General --- */
+	.ride-form .over-text{
+		font-size: 32px;
+	}
+	
+	/* --- Find A Ride --- */
+	.ride-form .find-form-wrapper .input-leaving,
+	.ride-form .find-form-wrapper .input-going{
+		width: 100%;
+	}
+	.ride-list{
+		padding-top: 30px;
+	}
+	.ride-item .left-content{
+		width: 50%;
+		float: left;
+	}
+	.ride-item .right-content{
+		width: 50%;
+		float: left;
+	}
+	/* - Create Alert - */
+	.create-alert .modal-dialog{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	/* --- Ride Detail --- */
+	.ride-detail .rd-content{
+		padding-left: 15px;
+	}
+	/* - Route Modal - */
+	.ride-route .modal-header{
+		padding: 15px;
+	}
+	
+	/* --- Offer a Ride --- */
+	.offer-ride{
+		background-position: 0 170px;
+	}
+	.ride-steps .form-container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	/* - Sucess - */
+	.success-steps{
+		padding-top: 80px;
+	}
+	.success-steps .success-item{
+		margin-bottom: 30px;
+	}
+	.success-steps .success-desc{
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+  }
+  @media screen and (max-width: 699px){
+	/* --- Offer a Ride --- */
+	.steps-detail .form-group{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.steps-detail .or-detail .form-caption{
+		margin-left: auto;
+	}
+	.steps-detail .field-counter{
+		width: 100%;
+		margin-top: 5px;
+	}
+  }
+  @media screen and (max-width: 599px){
+	/* --- Find a Ride --- */
+	/* - Create Alert - */
+	.create-alert .modal-content{
+		padding: 0 30px;
+	}
+	.create-alert{
+		overflow-y: scroll;
+	}
+	
+	/* --- Offer a Ride --- */
+	.offer-ride .ride-steps{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.ride-steps .form-left{
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 5px;
+	}
+	.ride-steps .form-right{
+		width: 100%;
+		padding-left: 0;
+	}
+	.ride-steps .form-group .form-right span{
+		left: 15px;
+	}
+	.steps-finish .form-left{
+		margin-bottom: 20px;
+	}
+	.ride-steps .steps-finish .finish-top .form-right{
+		text-align: left;
+	}
+	
+	
+  }
+  @media screen and (max-width: 489px){
+	/* --- General --- */
+	.xs-no-padding{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.xs-no-margin{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	/* --- Find A Ride --- */
+	.ride-item .left-content{
+		width: 100%;
+		float: none;
+	}
+	.ride-item .right-content{
+		width: 100%;
+		float: none;
+		text-align: left;
+	}
+	.ride-form .find-form-wrapper .ride-btn{
+		width: 100%;
+		margin: 0 9px;
+		padding-left: 0;
+	}
+	.create-alert .af-form .alert-filter .col-xs-6,
+	.create-alert .af-form .alert-field .col-xs-6{
+		width: 100%;
+	}
+	.create-alert .modal-header{
+		padding-top: 24px;
+		padding-bottom: 16px;
+	}
+	.create-alert .modal-body{
+		padding-top: 20px;
+	}
+	.create-alert .check-content{
+		margin-bottom: 0;
+	}
+	.create-alert .alert-field .group-input{
+		margin-bottom: 10px;
+	}
+	.create-alert .route-item{
+		margin-bottom: 20px;
+	}
+	
+	/* --- Offer a Ride --- */
+	.steps-finish .finish-bottom .check-content{
+		margin-bottom: 10px;
+		left: 0;
+	}
+	.steps-detail .or-terms .check-label{
+		margin-left: 0;
+	}
+	.ride-steps.af-form input[type="checkbox"] + label span{
+		left: 5px;
+	}
+	.offer-ride #maincontent{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.ride-steps .form-group{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.steps-finish .form-item{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+  }
+  @media screen and (max-width: 379px){
+	/* --- Find A Ride --- */
+	.ride-item .ride-img{
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	.ride-item .media-body{
+		display: block;
+		width: 100%;
+	}
+	.ride-paging,
+	.ride-paging .pagination{
+		text-align: center;
+	}
+	.ride-paging .pagination > li{
+		display: inline-block;
+	}
+	.ride-paging .pagination > li > a,
+	.ride-paging .pagination > li > span{
+		margin-bottom: 5px;
+	}
+	
+	/* --- Ride Detail --- */
+	.rd-panel .rdp-collapse{
+		font-size: 24px;
+	}
+	.rdp-collapse .decimal{
+		font-size: 14px;
+	}
+	.rdc-header .caption-header{
+		display: block;
+		margin-left: 0;
+	}
+	
+	/* --- Offer a Ride --- */
+	.ride-steps .form-subtitle .form-number{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.ride-steps .form-caption{
+		margin-top: 15px;
+		margin-left: auto;
+	}
+	
+  }

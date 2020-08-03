@@ -2,59 +2,62 @@
 	padding: 60px 0;
   	padding-bottom: 40px;
 	position: relative;
-	background: url(images/pattern.jpg) no-repeat;
-	  background-position: 0 100%;
-	  .footer--nav { 
-		padding-left: 0;
-		margin: 0;
-		margin-bottom: 35px;
-		.footer--nav li a {
-			font-family: "Rubik Light", Fallback, sans-serif;
-			font-size: 16px;
-			color: $abu3;
-			padding: 2px 0;
-		}
-	
-	}
+	background: url(../images/pattern.jpg) no-repeat;
+  	background-position: 0 100%;
 }
 .footer h4 {
 	margin: 0;
 	margin-bottom: 33px;
 	font-family: "Rubik Medium", Fallback, sans-serif;
 	font-size: 16px;
-	color: $biru;
+	color: #2788e6;
 	text-transform: uppercase;
 }
-
-.footer--nav li a:hover {
-	color: $biru;
+.footer-nav {
+	padding-left: 0;
+	margin: 0;
+	margin-bottom: 35px;
 }
-.link--app {
+.footer-nav li {
+	padding: 7px 0;
+	margin: 0;
+	list-style: none;
+}
+.footer-nav li a {
+	font-family: "Rubik Light", Fallback, sans-serif;
+	font-size: 16px;
+	color: #767676;
+	padding: 2px 0;
+}
+.footer-nav li a:hover {
+	color: #2788e6;
+}
+.link-app {
 	display: block;
 	margin-bottom: 10px;
 }
-.social--media {
+.social-media {
 	padding-left: 0;
 	padding-top: 18px;
 }
 
-.social--media li {
+.social-media li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
 	margin-right: 18px;
-  	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1100px) {
-	.social--media li {
+	.social-media li {
 		margin-right: 10px;
 	}
 }
 @media (max-width: 768px) {
 	footer .col-xs-12 {
 		width: 50%;
-	  	padding-left: 40px;
+	  padding-left: 40px;
   }
 }
 @media (max-width: 420px){
@@ -63,13 +66,14 @@
 	}
 }
 @media (max-width: 768px) {
-	.our--company {
+	.our-company {
 		min-height: 260px;
 	}
 }
+
 .copyright {
   font-family: "Rubik Light", Fallback, sans-serif;
   font-size: 16px;
-  color: $abu3;
+  color: #767676;
   text-align: center;
 }

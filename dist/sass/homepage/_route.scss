@@ -1,111 +1,88 @@
-/*ROUTE---------------------------------------------*/
 .route {
-    text-align: center;
-    background: url(images/route-bg.jpg);
+  text-align: center;
+  background: url(../images/route-bg.jpg);
 }
 @media (min-width: 600px) and (max-width: 768px){
-   .route .col-xs-12 {
-       width: 50%;
-   }
+ .route .col-xs-12 {
+   width: 50%;
+ }
 }
-.route .route--desc {
-   font-family: "Rubik Medium", Fallback, sans-serif;
-   font-size: 16px;
-   color: $abu4;
-   margin-bottom: 90px;
-   margin-top: 20px;
-   text-transform: uppercase;
-   letter-spacing: .25px;
+.route .route-desc {
+ font-family: "Rubik Medium", Fallback, sans-serif;
+ font-size: 16px;
+ color: #9daebf;
+ margin-bottom: 90px;
+ margin-top: 20px;
+ text-transform: uppercase;
+ letter-spacing: .25px;
 }
-.route__route-item {
-   padding: 20px;
-   margin-bottom: 38px;
-   background: $putih;
-   border-radius: 10px;
-   display: flex;
-   justify-content: space-between;
-   box-shadow: 0 2px 28px $hitam1;
-}
-
-.route__route-item .route__dest,
-.route__route-item .route__price {
-   text-align: left;
-}
-.route__route-item .route__price {
-   width: 120px;
-}
-.route__route-item .route__price p {
-   margin: 0;
-}
-.route__route-item .route__price p:nth-child(1) {
-   font-family: "Rubik Light", Fallback, sans-serif;
-   font-size: 16px;
-   color: $abu3;
-   margin-bottom: 5px;
-}
-.route__route-item .route__price p:nth-child(2) {
-   font-family: "Rubik Regular", Fallback, sans-serif;
-   font-size: 25px;
-   color: $biru;
-}
-.route__route-item ul {
-   margin-bottom: 0;
-   padding-left: 0px;
-}
-.route__route-item .route__dest li {
-   list-style: none;
-   padding-left: 20px;
-   font-family: "Rubik Medium", Fallback, sans-serif;
-   font-size: 16px;
-   color: $hitam;
-   position: relative;
-}
-.route__route-item .route__dest li span {
-   width: 9px;
-   height: 9px;
-   border-radius: 50%;
-   background: $abu8;
-   position: absolute;
-   left: 0;
-   top: 7px;
-}
-.route__route-item .route__dest li:nth-child(1) span::after {
-   content: " ";
-   position: absolute;
-   width: 2px;
-   top: 13px;
-   left: 3.5px;
-   background: $putih6;
-   height: 20px;
-}
-.route__route-item .route__dest li:nth-child(1) {
-   margin-bottom: 15px;
-}
-.route__route-item .route__dest li:nth-child(2) span {
-   background: $biru;
-}
-.feature .benefit--title {
-   margin-top: 33px;
+.route-item {
+ padding: 20px;
+ margin-bottom: 38px;
+ background: #fff;
+ border-radius: 10px;
+ display: flex;
+ justify-content: space-between;
+ box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
 }
 
-.route__popular-btn {
-   margin-top: 50px;
-   margin-bottom: 50px;
+.route-item .dest,
+.route-item .price {
+ text-align: left;
 }
-.route__popular-btn a {
-   padding: 20px 30px;
-   font-family: "Rubik Medium", Fallback, sans-serif;
-   font-size: 14px;
-   color: $putih;
-   text-transform: uppercase;
-   letter-spacing: .25px;
-   background: $biru;
-   border-radius: 5px;
+.route-item .price {
+ width: 120px;
 }
-
-@media screen and (max-width: 320px) {
-   .route__popular-btn a {
-       padding: 15px 10px;
-       font-size: 13px;
-   }
+.route-item .price p {
+ margin: 0;
+}
+.route-item .price p:nth-child(1) {
+ font-family: "Rubik Light", Fallback, sans-serif;
+ font-size: 16px;
+ color: #767676;
+ margin-bottom: 5px;
+}
+.route-item .price p:nth-child(2) {
+ font-family: "Rubik Regular", Fallback, sans-serif;
+ font-size: 25px;
+ color: #2788e6;
+}
+.route-item ul {
+ margin-bottom: 0;
+ padding-left: 0px;
+}
+.route-item .dest li {
+ list-style: none;
+ padding-left: 20px;
+ font-family: "Rubik Medium", Fallback, sans-serif;
+ font-size: 16px;
+ color: #2a2a2a;
+ position: relative;
+}
+.route-item .dest li span {
+ width: 9px;
+ height: 9px;
+ border-radius: 50%;
+ background: #d2dce6;
+ position: absolute;
+ left: 0;
+ top: 7px;
+}
+.route-item .dest li:nth-child(1) span::after {
+ content: " ";
+ position: absolute;
+ width: 2px;
+ top: 13px;
+ left: 3.5px;
+ background: #f3f7fb;
+ height: 20px;
+}
+.route-item .dest li:nth-child(1) {
+ margin-bottom: 15px;
+}
+.route-item .dest li:nth-child(2) span {
+ background: #2788e6;
+}
+.feature .benefit-title {
+ margin-top: 33px;
 }
