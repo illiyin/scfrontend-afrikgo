@@ -3138,8 +3138,6 @@ a:focus {
 
 /*mins pay*/
 /*STYLEEEE----------------------------*/
-/*CUSSS*/
-/*ENDEDDDDD-------------------------------*/
 @media screen and (max-width: 800px) {
   .aboutus-hero .header {
     height: 650px; }
@@ -3222,6 +3220,7 @@ a:focus {
   width: initial; }
 
 .find-form-wrapper .group-input .find-btn {
+  background: #2788e6;
   padding: 24px 37px;
   text-transform: uppercase;
   font-size: 14px;
@@ -3600,11 +3599,6 @@ a:focus {
   .user--box span img {
     width: auto; } }
 
-.ride-form .pagetitle {
-  font-size: 45px;
-  margin-bottom: 30px;
-  margin-top: 50px; }
-
 .pagetitle {
   font-family: "Rubik Light", Fallback, sans-serif;
   font-size: 42px;
@@ -3613,20 +3607,8 @@ a:focus {
   margin-bottom: 20px;
   text-align: center; }
 
-.ride-form .find-form-wrapper {
-  border-radius: 6px;
-  max-width: 928px;
-  padding-left: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 76px;
-  display: block; }
-
 .ride-form .find-form-wrapper .group-input .field {
   max-width: none; }
-
-.find-form-wrapper .group-input .field {
-  padding-left: 45px; }
 
 @media (min-width: 1200px) {
   .find-form-wrapper .field {
@@ -3656,16 +3638,6 @@ a:focus {
 
 .ride-form .find-form-wrapper .group-input .find-btn {
   width: 100%; }
-
-.find-form-wrapper .group-input .find-btn {
-  width: initial;
-  padding: 24px 37px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Rubik Medium", Fallback, sans-serif;
-  line-height: initial;
-  background: #2788e6;
-  color: #fff; }
 
 .ride-list .ride-item {
   padding: 8px 24px 0 18px; }
