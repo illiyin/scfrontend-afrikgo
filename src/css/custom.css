@@ -3,7 +3,6 @@ html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     -moz-font-smoothing: antialiased !important;
-    font-smoothing: antialiased !important;
 }
 
 /* --- Radio Buttons & Checkboxes --- */
@@ -504,10 +503,6 @@ a:focus{
     line-height: normal;
     letter-spacing: -0.023em;
     color: #2788e6;
-}
-.ride-item .right-content{
-    text-align: right;
-    padding-top: 20px;
 }
 .ride-item .media-body .seats-avail{
     color: #65ac26;
