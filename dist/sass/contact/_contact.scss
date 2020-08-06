@@ -1,0 +1,25 @@
+.contact {
+    background: #fcfcfc; 
+}
+.contact-area {
+	width: 96%;
+	max-width: 460px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 150px;
+	padding-top: 50px;
+	.signin-title {
+		color: $abu;
+		font-family: $font-regular;
+		font-size: 17px;
+		margin-bottom: 0;
+	}
+	.form {
+		margin-top: 55px;
+	}
+	form {
+		-webkit-box-sizing: initial !important;
+		-moz-box-sizing: initial !important;
+		box-sizing: initial !important;
+	}
+}

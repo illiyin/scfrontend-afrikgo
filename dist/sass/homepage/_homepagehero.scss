@@ -227,7 +227,7 @@
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 150px;
-	padding-top: 120px;
+	padding-top: 50px;
 	.signin-title {
 		color: $abu;
 		font-family: $font-regular;
@@ -446,9 +446,6 @@
 	color: $hitam;
 	margin-top: 0;
 	margin-bottom: 50px;
-}
-.contact {
-	background: $putih8;
 }
 .hero-about {
 	overflow: hidden;
@@ -672,7 +669,6 @@
 	.contact-area {
 		.field {
 			padding: 20px 4.78%;
-			width: calc(100% - 9.56%);
 		}
 	}
 	.signin-area {
