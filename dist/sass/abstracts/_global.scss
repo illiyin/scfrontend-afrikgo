@@ -1,25 +1,47 @@
 /*GLOBAL*/
-html,
+html {
+	padding: 0;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+}
 body {
 	padding: 0;
 	-webkit-font-smoothing: antialiased !important;
 	font-smoothing: antialiased !important;
 }
-
-body {
-/*	background: #fefefe;*/
+h1 {
+	padding: 0;
+	margin: 0;
 }
-
-h1,h2,h3,h4,h5,h6,
+h2 {
+	padding: 0;
+	margin: 0;
+}
+h3 {
+	padding: 0;
+	margin: 0;
+}
+h4 {
+	padding: 0;
+	margin: 0;
+}
+h5 {
+	padding: 0;
+	margin: 0;
+}
+h6 {
+	padding: 0;
+	margin: 0;
+}
 img {
 	padding: 0;
 	margin: 0;
 }
-a:hover {
-	text-decoration: none;
+a {
+	&:hover {
+		text-decoration: none;
+	}
 }
-
-
 .container {
 	transition: all .6s ease;
 }

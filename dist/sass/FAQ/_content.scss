@@ -1,10 +1,10 @@
 /*FAQ page*/
 .faq {
 	padding: 65px 0;
-	background: #f3f3f3;
+	background: $putih4;
 }
 .faq-wrapper {
-	background: #fff;
+	background: $putih;
 	margin-top: 68px;
 	padding: 68px 0;
 	min-height: 999px;
@@ -23,9 +23,9 @@
 	float: right;
 	width: 134px;
 	margin-right: 0;
-	font-family: "Rubik Medium", sans-serif;
-	color: #fff;
-	background: #2788e6;
+	font-family: $font-rusan;
+	color: $putih;
+	background: $biru;
 }
 .faq-wrapper .search:after {
 	content: "";
@@ -65,7 +65,7 @@
 
 .faq hr {
 	margin: 45px 0 40px;
-	border-top: 1px solid #d8d8d8;
+	border-top: 1px solid $abu17;
 }
 .faq-sidebar {
 	padding-left: 30px;
@@ -76,13 +76,13 @@
 	}
 }
 .faq-sidebar li {
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	color: #909194;
+	font-family: $font-medium;
+	color: $abu19;
 	font-size: 16px;
 	letter-spacing: .25px;
 	max-width: 225px;
 	padding: 18px 0;
-	border-bottom: 1px solid #d8d8d8;
+	border-bottom: 1px solid $abu17;
 	list-style: none;
 	text-transform: uppercase;
 }
@@ -96,7 +96,7 @@
 	}
 }
 .faq-sidebar li.active {
-	color: #2788e6;
+	color: $biru;
 }
 .faq-sidebar span {
 	float: right;
@@ -125,32 +125,32 @@
 .faq-panel-group .panel-heading {
 	padding: 0;
 	font-size: 16px;
-	background: #fff;
-	font-family: "Rubik Medium", Fallback, sans-serif;
-    border-bottom: 1px solid #ddd;
+	background: $putih;
+	font-family: $font-medium;
+    border-bottom: 1px solid $abu16;
 }
 .panel-heading a {
 	text-decoration: none;
 }
 .panel-heading h4 {
 	padding: 17px 0;
-	color: #4e565e;
+	color: $abu;
 }
 .faq-panel-group .panel-default {
 	border:none;
-	background: #fff;
+	background: $putih;
 	border-bottom: 1px solid transparent;
 	border-radius: 0;
 	box-shadow: none;
 }
 .faq-panel-group .panel-body {
-	color: #818181;
+	color: $abu18;
 	font-family: $font-family;
 	font-size: 16px;
 	line-height: 32px;
 }
 .faq-wrapper .faq-content {
-	border-left: 1px solid #d8d8d8;
+	border-left: 1px solid $abu18;
 	padding-left: 20px;
 }
 @media (max-width: 768px) {

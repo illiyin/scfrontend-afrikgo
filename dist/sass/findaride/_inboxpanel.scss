@@ -21,11 +21,11 @@
 }
 .btn-blue {
     border: none;
-    background: #2788e6;
+    background: $biru;
     box-shadow: none;
 }
 .btn-afg {
-    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-family: $font-medium;
     font-size: 14px;
     line-height: normal;
     letter-spacing: 0;
@@ -52,7 +52,7 @@
     padding-bottom: 30px;
 }
 .create-alert .modal-title {
-    font-family: 'Rubik Light', Fallback, sans-serif;
+    font-family: $font-family;
     font-size: 35px;
     line-height: normal;
     letter-spacing: -0.023em;
@@ -74,11 +74,11 @@
 .route-item {
     padding: 20px;
     margin-bottom: 38px;
-    background: #fff;
+    background: $putih;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 28px $hitam1;
 }
 .route-item .dest, .route-item .price {
     text-align: left;
@@ -90,7 +90,7 @@
 .route-item .dest li {
     list-style: none;
     padding-left: 20px;
-    font-family: "Rubik Medium", Fallback, sans-serif;
+    font-family: $font-medium;
     font-size: 16px;
     color: $hitam;
     position: relative;

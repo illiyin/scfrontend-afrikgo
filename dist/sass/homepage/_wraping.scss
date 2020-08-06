@@ -9,9 +9,9 @@
 	}
 }
 .find-form-wrapper {
-	background: #fff;
+	background: $putih;
 	padding: 25px 24px 25px 15px;
-	box-shadow: 0px 0px 40px -2px rgba(218,218,218, 0.45);
+	box-shadow: 0px 0px 40px -2px $abu10;
 	margin-bottom: 42px;
 }
 .wraping {
@@ -30,7 +30,7 @@
 	margin-bottom: 0;
 	padding-top: 22px;
 	padding-bottom: 22px;
-	background: #fdfdfd;
+	background: $putih2;
 }
 @media (min-width: 1200px) {
 	.find-form-wrapper .field {
@@ -51,16 +51,16 @@
 	width: initial;
 }
 .find-form-wrapper .group-input .find-btn {
-	background: #2788e6;
+	background: $biru;
 	padding: 24px 37px;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: "Rubik Medium", Fallback, sans-serif;
+	font-family: $font-medium;
 	line-height: initial;
-	color: #fff;
+	color: $putih;
 }
 .find-form-wrapper .group-input .offer-btn {
-	background: #eab244 !important;
+	background: $orange !important;
 }
 .find-form-wrapper .circle {
 	width: 10%;
@@ -69,13 +69,13 @@
 .circle-or {
 	width: 42px;
 	height: 42px;
-	border: 1px solid #d7dfe8;
+	border: 1px solid $putih3;
 	position: relative;
 	border-radius: 50%;
 	padding: 10px;
 	padding-top: 10px;
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	color: #b2c1cf;
+	font-family: $font-medium;
+	color: $abu2;
 	font-size: 14px;
 	margin: 10px 14px;
 }
@@ -86,7 +86,7 @@
 	top: -25px;
 	left: 50%;
 	height: 35px;
-	background: #f0f0f0;
+	background: $putih4;
 }
 .circle::after {
 	content: " ";
@@ -95,7 +95,7 @@
 	bottom: -25px;
 	left: 50%;
 	height: 40px;
-	background: #f0f0f0;
+	background: $putih4;
 }
 
 @media (max-width: 1320px){
@@ -187,13 +187,13 @@
 .circle-or {
 	width: 42px;
 	height: 42px;
-	border: 1px solid #d7dfe8;
+	border: 1px solid $putih3;
 	position: relative;
 	border-radius: 50%;
 	padding: 10px;
 	padding-top: 10px;
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	color: #b2c1cf;
+	font-family: $font-medium;
+	color: $abu2;
 	font-size: 14px;
 	margin: 10px 14px;
 }
@@ -204,7 +204,7 @@
 	top: -25px;
 	left: 50%;
 	height: 35px;
-	background: #f0f0f0;
+	background: $putih4;
 }
 .circle::after {
 	content: " ";
@@ -213,5 +213,5 @@
 	bottom: -25px;
 	left: 50%;
 	height: 40px;
-	background: #f0f0f0;
+	background: $putih4;
 }

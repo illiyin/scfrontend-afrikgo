@@ -41,7 +41,7 @@ a {
 .ride-item .ride-item-separator {
     margin-top: 22px;
     margin-bottom: 22px;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid $abu13;
 }
 .ride-paging {
     text-align: right;
@@ -51,7 +51,7 @@ a {
     margin-top: 0;
 }
 .ride-paging .pagination > li > a, .ride-paging .pagination > li > span {
-    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-family: $font-medium;
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0;
@@ -63,7 +63,7 @@ a {
     border-color: $abu15;
 }
 .ride-item .content-header {
-    font-family: 'Rubik Regular', Fallback, sans-serif;
+    font-family: $font-regular;
     font-size: 25px;
     line-height: normal;
     letter-spacing: -0.023em;
@@ -71,7 +71,7 @@ a {
     margin-bottom: 4px;
 }
 .ride-item .media-body .content-city {
-    font-family: 'Rubik Medium', Fallback, sans-serif;
+    font-family: $font-medium;
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0;
@@ -79,7 +79,7 @@ a {
     text-transform: uppercase;
 }
 .ride-item .media-body p {
-    font-family: 'Rubik Light', Fallback, sans-serif;
+    font-family: $font-family;
     font-size: 15px;
     line-height: 27px;
     letter-spacing: 0;
@@ -87,7 +87,7 @@ a {
     margin-bottom: 2px;
 }
 .ride-item .price-text {
-    font-family: 'Rubik Regular', Fallback, sans-serif;
+    font-family: $font-regular;
     font-size: 32px;
     line-height: normal;
     letter-spacing: -0.023em;

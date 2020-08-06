@@ -1,85 +1,40 @@
+/*wrapper ---------------*/
+/*mins pay*/
 .hero-wrapper {
 	background: url(../images/hero1.jpg) no-repeat;
 	padding: 100px 0 0 0;
-}
-.hero-wrapper h1 {
-	font-family: $font-family;
-	color: $biru;
-}
-.hero-wrapper p {
-	color: $hitam;
-	font-family: $font-family;
-	opacity: 0.7;
-	line-height: 32px;
-}
-@media (min-width: 992px) {
-	.hero-wrapper {
-		background-size: 65%;
-		background-position: 100% 50px;
+	h1 {
+		font-family: $font-family;
+		color: $biru;
 	}
-	.hero-wrapper h1 {
-		font-size: 45px;
-		width: 430px;
-		margin-bottom: 30px;
-	}
-	.hero-wrapper p {
-		font-size: 18px;
-		max-width: 430px;
-		padding-bottom: 100px;
+	p {
+		color: $hitam;
+		font-family: $font-family;
+		opacity: 0.7;
+		line-height: 32px;
 	}
 }
-@media (max-width: 992px) {
-	.hero-wrapper {
-		background-size: 65%;
-		background-position: 100% 50px;
-	}
-	.hero-wrapper h1 {
-		text-align: center;
-		font-size: 45px;
-		margin-top: 0;
-		margin-bottom: 30px;
-	}
-	.hero-wrapper p {
-		font-size: 18px;
-		max-width: 430px;
-		padding-bottom: 100px;
-	}
-}
-
-
 .feature-img {
 	margin-bottom: 34px;
-
+	img {
+		width: 100%;
+		max-width: 370px;
+	}
 }
-.feature-img img {
-	width: 100%;
-	max-width: 370px;
-}
-
 .popular-btn {
 	margin-top: 50px;
 	margin-bottom: 50px;
-}
-.popular-btn a {
-	padding: 20px 30px;
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	font-size: 14px;
-	color: $putih;
-	text-transform: uppercase;
-	letter-spacing: .25px;
-	background: $biru;
-	border-radius: 5px;
-}
-
-@media screen and (max-width: 320px) {
-	.popular-btn a {
-		padding: 15px 10px;
-		font-size: 13px;
+	a {
+		padding: 20px 30px;
+		font-family: $font-medium;
+		font-size: 14px;
+		color: $putih;
+		text-transform: uppercase;
+		letter-spacing: .25px;
+		background: $biru;
+		border-radius: 5px;
 	}
 }
-
-
-
 .user {
 	width: 100%;
 	display: flex;
@@ -89,61 +44,531 @@
 	display: flex;
 	flex-direction: row-reverse;
 	padding: 25px 0;
-
 	border: 1px solid $putih7;
+	.user-title {
+		color: $biru;
+		margin-right: 30px;
+	}
 }
 .driver {
 	width: 50%;
 	padding: 25px 0;
 	border: 1px solid $putih7;
+	.user-title {
+		color: $orange;
+	}
 }
 .user-box {
 	width: 100%;
 	max-width: 400px;
 	display: flex;
 	position: relative;
-}
-.user-box a {
-	width: 100%;
-	max-width: 400px;
-	display: flex;
-	position: relative;
-
-}
-@media (max-width: 769px) {
-	.user-box a {
-		max-width: 100%;
+	a {
+		width: 100%;
+		max-width: 400px;
+		display: flex;
+		position: relative;
 	}
-}
-.user-box img {
-	padding-top: 10px;
-	margin-right: 25px;
+	img {
+		padding-top: 10px;
+		margin-right: 25px;
+	}
+	span {
+		position: absolute;
+		right: 0;
+		top: 20px;
+	}
 }
 .user-title {
 	font-family: $font-family;
 	font-size: 32px;
 	margin-bottom: 0;
 }
-
-.passenger .user-title {
-	color: $biru;
-	margin-right: 30px;
-}
-.driver .user-title {
-	color: $orange;
-}
 .user-text {
-	font-family: "Rubik Medium", Fallback, sans-serif;
+	font-family: $font-medium;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: $abu9;
 }
-.user-box span {
+.signup-area {
+	width: 96%;
+	max-width: 460px;
+	margin: 0 auto;
+	text-align: center;
+	.signup-title {
+		color: $abu;
+		font-family: $font-regular;
+		font-size: 17px;
+		margin-bottom: 0;
+	}
+	.form {
+		margin-top: 55px;
+	}
+	form {
+		-webkit-box-sizing: initial !important;
+		-moz-box-sizing: initial !important;
+		box-sizing: initial !important;
+		[type="radio"] {
+			&:checked {
+				position: absolute;
+				left: -9999px;
+				+ {
+					label {
+						margin-right: 40px;
+						position: relative;
+						padding-top: 1px;
+						padding-left: 42px;
+						cursor: pointer;
+						line-height: 20px;
+						display: inline-block;
+						color: $abu24;
+						&:before {
+							content: '';
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 23px;
+							height: 23px;
+							border: 1px solid $putih3;
+							border-radius: 100%;
+							background: $putih;
+						}
+						&:after {
+							content: '';
+							width: 15px;
+							height: 15px;
+							background: $biru3;
+							position: absolute;
+							top: 4px;
+							left: 4px;
+							border-radius: 100%;
+							-webkit-transition: all 0.2s ease;
+							transition: all 0.2s ease;
+							opacity: 1;
+							-webkit-transform: scale(1);
+							transform: scale(1);
+						}
+					}
+				}
+			}
+			&:not(:checked) {
+				position: absolute;
+				left: -9999px;
+				+ {
+					label {
+						margin-right: 40px;
+						position: relative;
+						padding-top: 1px;
+						padding-left: 42px;
+						cursor: pointer;
+						line-height: 20px;
+						display: inline-block;
+						color: $abu24;
+						&:before {
+							content: '';
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 23px;
+							height: 23px;
+							border: 1px solid $putih3;
+							border-radius: 100%;
+							background: $putih;
+						}
+						&:after {
+							content: '';
+							width: 15px;
+							height: 15px;
+							background: $biru3;
+							position: absolute;
+							top: 4px;
+							left: 4px;
+							border-radius: 100%;
+							-webkit-transition: all 0.2s ease;
+							transition: all 0.2s ease;
+							opacity: 0;
+							-webkit-transform: scale(0);
+							transform: scale(0);
+						}
+					}
+				}
+			}
+		}
+	}
+	hr {
+		border: none;
+		border-top: 1px solid $abu25;
+		margin: 34px 0;
+	}
+}
+.signin-area {
+	width: 96%;
+	max-width: 460px;
+	margin: 0 auto;
+	text-align: center;
+	.signin-title {
+		color: $abu;
+		font-family: $font-regular;
+		font-size: 17px;
+		margin-bottom: 0;
+	}
+	.form {
+		margin-top: 55px;
+	}
+	form {
+		-webkit-box-sizing: initial !important;
+		-moz-box-sizing: initial !important;
+		box-sizing: initial !important;
+	}
+}
+.contact-area {
+	width: 96%;
+	max-width: 460px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 150px;
+	padding-top: 120px;
+	.signin-title {
+		color: $abu;
+		font-family: $font-regular;
+		font-size: 17px;
+		margin-bottom: 0;
+	}
+	.form {
+		margin-top: 55px;
+	}
+	form {
+		-webkit-box-sizing: initial !important;
+		-moz-box-sizing: initial !important;
+		box-sizing: initial !important;
+	}
+}
+.main-logo {
+	img {
+		width: 37px;
+		margin-top: 78px;
+		margin-bottom: 14px;
+		vertical-align: inherit;
+	}
+	h1 {
+		font-family: $font-medium;
+		line-height: 13.7px;
+		font-size: 31.68px;
+		color: $biru2;
+		margin-bottom: 30px;
+		font-weight: bold;
+		span {
+			color: $biru3;
+		}
+	}
+}
+.field {
+	font-family: $font-regular;
+	font-size: 15px;
+	color: $abu7;
+	padding: 16px 22px;
+	border-radius: 5px;
+	border: 1px solid $putih3;
+	width: calc(100%);
+	margin-bottom: 22px;
+	line-height: auto;
+}
+.first-name {
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+}
+.last-name {
+	float: right;
+	width: 220px;
+	&::after {
+		clear: both;
+	}
+}
+.input-gender {
+	padding-top: 0;
+	margin-top: 0;
+	color: $abu24;
+	text-align: left;
+	margin-bottom: 22px;
+	font-family: $font-regular;
+	font-size: 15px;
+}
+.signup-btn {
+	font-family: $font-medium;
+	background: $biru;
+	font-size: 14px;
+	letter-spacing: .5px;
+	padding: 20px 0;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: $putih;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+.signin-btn {
+	font-family: $font-medium;
+	background: $biru;
+	font-size: 14px;
+	letter-spacing: .5px;
+	padding: 20px 0;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: $putih;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	cursor: pointer;
+	margin-bottom: 19px;
+}
+.signup-agreement {
+	font-family: $font-family;
+	font-size: 16px;
+	color: $abu3;
+	line-height: 27px;
+	width: 74.61%;
+	margin: 0 auto;
+	margin-top: 0;
+}
+.have-account {
+	font-family: $font-family;
+	color: $abu;
+	font-size: 16px;
+	margin-bottom: 90px;
+	a {
+		color: $biru;
+	}
+}
+.styled-checkbox {
 	position: absolute;
-	right: 0;
-	top: 20px;
+	opacity: 0;
+	+ {
+		label {
+			float: left;
+			position: relative;
+			font-family: $font-family;
+			font-size: 16px;
+			font-weight: 300;
+			color: $abu3;
+			cursor: pointer;
+			padding: 0;
+			margin-top: 3px;
+			&:before {
+				content: '';
+				margin-right: 15px;
+				display: inline-block;
+				vertical-align: text-top;
+				border-radius: 5px;
+				width: 20px;
+				height: 20px;
+				background: $putih1;
+				border: 1px solid $putih3;
+				margin-top: -2px;
+			}
+		}
+	}
+	&:hover {
+		+ {
+			label {
+				&:before {
+					background: transparent;
+				}
+			}
+		}
+	}
+	&:checked {
+		+ {
+			label {
+				&:before {
+					background: $biru;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					left: 4.5px;
+					top: 9px;
+					background: $putih1;
+					width: 2px;
+					height: 2px;
+					box-shadow: 2px 0 0 $putih1, 4px 0 0 white, 4px -2px 0 $putih1, 4px -4px 0 $putih1, 4px -6px 0 $putih1, 4px -8px 0 $putih1;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+	&:disabled {
+		+ {
+			label {
+				color: $abu21;
+				cursor: auto;
+			}
+		}
+	}
+}
+.forgot {
+	float: right;
+	font-family: $font-family;
+	font-size: 15px;
+	color: $biru;
+}
+.login-option {
+	position: relative;
+	margin-bottom: 80px;
+	&:after {
+		clear: both;
+	}
+}
+.dont-have-account {
+	font-family: $font-family;
+	color: $abu3;
+	font-weight: 300;
+	font-size: 16px;
+	margin-top: 33px;
+	margin-bottom: 90px;
+	a {
+		color: $biru;
+	}
+}
+.pagetitle {
+	font-family: $font-family;
+	font-size: 42px;
+	font-weight: 300;
+	color: $biru;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.subpage-title {
+	font-family: $font-family;
+	font-size: 16px;
+	color: $hitam;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+.contact {
+	background: $putih8;
+}
+.hero-about {
+	overflow: hidden;
+	.container {
+		padding-left: 0;
+	}
+	.hero-image {
+		float: right;
+		position: absolute;
+		right: 0;
+		z-index: 0;
+		img {
+			max-width: 905px;
+			width: 100%;
+			margin-right: -70px;
+		}
+	}
+	.hero-text {
+		position: relative;
+		font-family: $font-family;
+		font-size: 45px;
+		color: $biru;
+		font-weight: 300;
+		padding-top: 320px;
+		margin-bottom: 190px;
+	}
+}
+.hero-text {
+	h1 {
+		max-width: 500px;
+		z-index: 3;
+	}
+}
+.how-it-works {
+	.header {
+		.bg {
+			h1.about-us-title {
+				margin-bottom: 100px !important;
+			}
+		}
+	}
+}
+.our-vision {
+	padding: 125px 0;
+	text-align: center;
+	background: $putih9;
+	margin-top: 10px;
+	.section-title {
+		font-family: $font-family;
+		font-size: 42px;
+		color: $biru;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+}
+.about-who {
+	.section-title {
+		font-family: $font-family;
+		font-size: 42px;
+		color: $biru;
+		margin-bottom: 30px;
+		margin-top: 0;
+	}
+	padding: 125px 0;
+	text-align: left;
+	background: $putih;
+	.side {
+		width: 50%;
+		float: left;
+		transition: all .6s ease;
+	}
+	.rightside {
+		padding-left: 110px;
+	}
+}
+.about-desc {
+	font-family: $font-family;
+	font-size: 16px;
+	line-height: 27px;
+	margin-top: 0;
+	color: $abu3;
+}
+.vision-desc {
+	margin: 0 auto;
+	max-width: 825px;
+	width: 100%;
+}
+.we-are-desc {
+	max-width: 458px;
+}
+.homepage-hero {
+	h1 {
+		width: 100%;
+		max-width: 420px;
+		margin-bottom: 40px;
+	}
+	p {
+		font-size: 18px;
+		line-height: 32px;
+		width: 100% !important;
+	}
+}
+.underlined-static {
+	text-decoration: underline $abu5;
 }
 @media (min-width: 992px) {
+	.hero-wrapper {
+		background-size: 65%;
+		background-position: 100% 50px;
+		h1 {
+			font-size: 45px;
+			width: 430px;
+			margin-bottom: 30px;
+		}
+		p {
+			font-size: 18px;
+			max-width: 430px;
+			padding-bottom: 100px;
+		}
+	}
 	.driver {
 		padding-left: 90px;
 	}
@@ -152,11 +577,41 @@
 	}
 }
 @media (max-width: 992px) {
+	.hero-wrapper {
+		background-size: 65%;
+		background-position: 100% 50px;
+		h1 {
+			text-align: center;
+			font-size: 45px;
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+		p {
+			font-size: 18px;
+			max-width: 430px;
+			padding-bottom: 100px;
+		}
+	}
 	.driver {
 		padding-left: 40px;
 	}
 	.passenger {
 		padding-right: 35px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.popular-btn {
+		a {
+			padding: 15px 10px;
+			font-size: 13px;
+		}
+	}
+}
+@media (max-width: 769px) {
+	.user-box {
+		a {
+			max-width: 100%;
+		}
 	}
 }
 @media (max-width: 840px) {
@@ -167,7 +622,6 @@
 		padding-right: 0px;
 	}
 }
-
 @media (max-width: 768px) {
 	.user {
 		flex-direction: column;
@@ -200,113 +654,57 @@
 	.user-text {
 		font-size: 14px;
 	}
-	.user-box img {
-		padding-top: 10px;
-		margin-right: 25px;
-		width: 45px;
-	}
-	.user-box span {
-		top: 12px;
-	}
-	.user-box span img {
-		width: auto;
-	}
-
-}
-
-.signup-area,
-.signin-area,
-.contact-area {
-	width: 96%;
-	max-width: 460px;
-	margin: 0 auto;
-	text-align: center;
-
-}
-.main-logo img {
-	width: 37px;
-	margin-top: 78px;
-	margin-bottom: 14px;
-	vertical-align: inherit;
-}
-.main-logo h1 {
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	line-height: 13.7px;
-	font-size: 31.68px;
-	color: $biru2;
-	margin-bottom: 30px;
-	font-weight: bold;
-}
-.main-logo h1 span {
-	color: $biru3;
-}
-
-/*wrapper ---------------*/
-
-.signup-area .signup-title,
-.signin-area .signin-title,
-.contact-area .signin-title {
-	color: $abu;
-	font-family: $font-regular;
-	font-size: 17px;
-	margin-bottom: 0;
-}
-
-.signup-area .form,
-.signin-area .form,
-.contact-area .form{
-	margin-top: 55px;
-}
-.signup-area form,
-.signin-area form,
-.contact-area form{
-  -webkit-box-sizing: initial !important;
-  -moz-box-sizing: initial !important;
-  box-sizing: initial !important;
-}
-.field {
-	font-family: $font-regular;
-	font-size: 15px;
-	color: $abu7;
-	padding: 16px 22px;
-	border-radius: 5px;
-	border: 1px solid $putih3;
-	width: calc(100%);
-	margin-bottom: 22px;
-	line-height: auto;
-}
-@media(max-width: 465px){
-	.contact-area .field,
-	.signin-area .field,
-	.signup-area .field {
-		padding: 20px 4.78%;
-		width: calc(100% - 9.56%);
+	.user-box {
+		img {
+			padding-top: 10px;
+			margin-right: 25px;
+			width: 45px;
+		}
+		span {
+			top: 12px;
+			img {
+				width: auto;
+			}
+		}
 	}
 }
-.first-name {
-	width: 220px;
-	float: left;
-	margin-right: 20px;
-}
-.last-name {
-	float: right;
-	width: 220px;
-}
-@media(max-width: 496px){
-	.first-name {
-		width: 47.5%;
-		float: left;
-		margin-right: 5%;
+@media (max-width: 465px) {
+	.contact-area {
+		.field {
+			padding: 20px 4.78%;
+			width: calc(100% - 9.56%);
+		}
 	}
-	.last-name {
-		float: right;
-		width: 47.5%;
+	.signin-area {
+		.field {
+			padding: 20px 4.78%;
+			width: calc(100% - 9.56%);
+		}
 	}
-	.input-gender {
-		padding-left: 20px;
+	.signup-area {
+		.field {
+			padding: 20px 4.78%;
+			width: calc(100% - 9.56%);
+		}
+		form {
+			[type="radio"] {
+				&:checked {
+					+ {
+						label {
+							margin-bottom: 10px;
+						}
+					}
+				}
+				&:not(:checked) {
+					+ {
+						label {
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
 	}
-}
-@media(max-width: 465px){
 	.first-name {
 		width: 37.17%;
 		float: none;
@@ -320,432 +718,170 @@
 		padding-left: 20px;
 	}
 }
-.last-name::after{
-	clear: both;
-}
-.input-gender {
-	padding-top: 0;
-	margin-top: 0;
-	color: $abu24;
-	text-align: left;
-	margin-bottom: 22px;
-	font-family: $font-regular;
-	font-size: 15px;
-}
-.signup-area form [type="radio"]:checked,
-.signup-area form [type="radio"]:not(:checked) {
-    position: absolute;
-    left: -9999px;
-}
-.signup-area form [type="radio"]:checked + label,
-.signup-area form [type="radio"]:not(:checked) + label
-{
-	margin-right: 40px;
-    position: relative;
-    padding-top: 1px;
-    padding-left: 42px;
-    cursor: pointer;
-    line-height: 20px;
-    display: inline-block;
-    color: $abu24;
-}
-@media(max-width: 465px){
-	.signup-area form [type="radio"]:checked + label,
-	.signup-area form [type="radio"]:not(:checked) + label{
-		margin-bottom: 10px;
+@media (max-width: 496px) {
+	.first-name {
+		width: 47.5%;
+		float: left;
+		margin-right: 5%;
+	}
+	.last-name {
+		float: right;
+		width: 47.5%;
+	}
+	.input-gender {
+		padding-left: 20px;
 	}
 }
-.signup-area form [type="radio"]:checked + label:before,
-.signup-area form [type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 23px;
-    height: 23px;
-    border: 1px solid $putih3;
-    border-radius: 100%;
-    background: $putih;
-}
-.signup-area form [type="radio"]:checked + label:after,
-.signup-area form [type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 15px;
-    height: 15px;
-    background: $biru3;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-.signup-area form [type="radio"]:not(:checked) + label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
-.signup-area form [type="radio"]:checked + label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-.signup-btn,
-.signin-btn {
-	font-family: "Rubik Medium", Fallback, sans-serif;
-	background: $biru;
-	font-size: 14px;
-	letter-spacing: .5px;
-	padding: 20px 0;
-	width: 100%;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	color: $putih;
-	text-transform: uppercase;
-	margin-bottom: 40px;
-	cursor: pointer;
-}
-@media ( max-width:  465px) {
-	.signup-btn ,
+@media ( max-width: 465px) {
+	.signup-btn {
+		width: calc(100% - 9.56%);
+	}
 	.signin-btn {
 		width: calc(100% - 9.56%);
 	}
-}
-.signin-btn {
-	margin-bottom: 19px;
-}
-.signup-agreement {
-	font-family: $font-family;
-	font-size: 16px;
-	color: $abu3;
-	line-height: 27px;
-	width: 74.61%;
-	margin: 0 auto;
-	margin-top: 0;
-}
-.signup-area hr {
-	border:none;
-	border-top: 1px solid $abu25;
-	margin: 34px 0;
-}
-.have-account {
-	font-family: $font-family;
-	color: $abu;
-	font-size: 16px;
-	margin-bottom: 90px;
-}
-.have-account a {
-	color: $biru;
-}
-
-.styled-checkbox {
-  	position: absolute;
-  	opacity: 0;
-}
-.styled-checkbox + label {
-	float: left;
-  	position: relative;
-  	font-family: $font-family;
-  	font-size: 16px;
-  	font-weight: 300;
-  	color: $abu3;
-  	cursor: pointer;
-  	padding: 0;
-  	margin-top: 3px;
-}
-.styled-checkbox + label:before {
-  	content: '';
-  	margin-right: 15px;
-  	display: inline-block;
-  	vertical-align: text-top;
-  	border-radius: 5px;
-  	width: 20px;
-  	height: 20px;
-  	background: $putih1;
-  	border: 1px solid $putih3;
-  	margin-top: -2px;
-}
-.styled-checkbox:hover + label:before {
-  	background: transparent;
-}
-.styled-checkbox:focus + label:before {
-}
-.styled-checkbox:checked + label:before {
-  	background: $biru;
-}
-.styled-checkbox:disabled + label {
-  	color: $abu21;
-  	cursor: auto;
-}
-.styled-checkbox:checked + label:after {
-  	content: '';
-  	position: absolute;
-  	left: 4.5px;
-  	top: 9px;
-  	background: $putih1;
-  	width: 2px;
-  	height: 2px;
-  	box-shadow: 2px 0 0 $putih1, 4px 0 0 white, 4px -2px 0 $putih1, 4px -4px 0 $putih1, 4px -6px 0 $putih1, 4px -8px 0 $putih1;
-    -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.forgot {
-	float: right;
-	font-family: $font-family;
-	font-size: 15px;
-	color: $biru;
-
-}
-.login-option {
-	position: relative;
-	margin-bottom: 80px;
-
-}
-@media ( max-width: 465px) {
 	.login-option {
 		margin: 0 auto;
 		width: calc(100% - 9.56%);
 	}
 }
-.login-option:after {
-	clear: both;
-}
-.dont-have-account {
-	font-family: $font-family;
-	color: $abu3;
-	font-weight: 300;
-	font-size: 16px;
-	margin-top: 33px;
-	margin-bottom: 90px;
-}
-.dont-have-account a {
-	color: $biru;
-}
-
-.pagetitle {
-	font-family: $font-family;
-	font-size: 42px;
-	font-weight: 300;
-	color: $biru;
-	margin-bottom: 20px;
-	text-align: center;
-}
-.subpage-title {
-	font-family: $font-family;
-	font-size: 16px;
-	color: $hitam;
-	margin-top: 0;
-	margin-bottom: 50px;
-}
-.contact {
-  background: $putih8;
-}
-.contact-area {
-	padding-bottom: 150px;
-  padding-top: 120px;
-}
-
-.hero-about {
-	overflow: hidden;
-}
-.hero-about .container {
-	padding-left: 0;
-}
-.hero-about .hero-image{
-	float: right;
-	position: absolute;
-	right: 0;
-	z-index: 0;
-}
-.hero-about .hero-image img {
-	max-width: 905px;
-	width: 100%;
-	margin-right: -70px;
-}
-.hero-about .hero-text {
-	position: relative;
-	font-family: $font-family;
-	font-size: 45px;
-	color: $biru;
-	font-weight: 300;
-	padding-top: 320px;
-	margin-bottom: 190px;
-}
-.hero-text h1 {
-	max-width: 500px;
-	z-index: 3;
-}
-.how-it-works .header .bg h1.about-us-title {
-	margin-bottom: 100px !important;
-}
-.our-vision {
-	padding: 125px 0;
-	text-align: center;
-	background: $putih9;
-	margin-top: 10px;
-}
-.our-vision .section-title,
-.about-who .section-title {
-	font-family: $font-family;
-	font-size: 42px;
-	color: $biru;
-	margin-bottom: 30px;
-	margin-top: 0;
-}
-.about-desc {
-	font-family: $font-family;
-	font-size: 16px;
-	line-height: 27px;
-	margin-top: 0;
-	color: $abu3;
-}
-.vision-desc {
-	margin: 0 auto;
-	max-width: 825px;
-	width: 100%;
-}
-.about-who {
-	padding: 125px 0;
-	text-align: left;
-	background: $putih;
-}
-.we-are-desc {
-	max-width: 458px;
-}
-.about-who .side {
-	width: 50%;
-	float: left;
-	transition: all .6s ease;
-}
-.about-who .rightside {
-	padding-left: 110px;
-}
-@media(max-width:992px) {
-	.about-who .rightside {
-		padding-left: 30px;
+@media (max-width:992px) {
+	.about-who {
+		.rightside {
+			padding-left: 30px;
+		}
 	}
 }
-@media(max-width:768px) {
-	.about-who .side {
-		width: 100%;
-		text-align: center;
-	}
-	.about-who .rightside {
-		padding-left: 0;
-		margin-top: 70px;
-		text-align: center;
+@media (max-width:768px) {
+	.about-who {
+		.side {
+			width: 100%;
+			text-align: center;
+		}
+		.rightside {
+			padding-left: 0;
+			margin-top: 70px;
+			text-align: center;
+		}
 	}
 	.we-are-desc {
 		text-align: center;
 		margin: 0 auto;
 	}
 }
-
-.homepage-hero h1 {
-	width: 100%;
-	max-width: 420px;
-	margin-bottom: 40px;
-}
 @media (min-width: 1200px) {
-	.homepage-hero h1 {
-		max-width: 450px;
-	}
-}
-.homepage-hero p {
-	font-size: 18px;
-	line-height: 32px;
-	width: 100% !important;
-}
-@media (min-width: 1200px) {
-	.homepage-hero p {
-		max-width: 430px !important;
+	.homepage-hero {
+		h1 {
+			max-width: 450px;
+		}
+		p {
+			max-width: 430px !important;
+		}
 	}
 }
 @media (max-width: 1200px) {
-	.homepage-hero p {
-		font-size: 18px;
-		line-height: 32px;
-		max-width: 430px !important;
+	.homepage-hero {
+		p {
+			font-size: 18px;
+			line-height: 32px;
+			max-width: 430px !important;
+		}
 	}
 }
 @media (min-width: 800px) and (max-width: 992px) {
-	.homepage-hero p {
-		max-width: 320px !important;
+	.homepage-hero {
+		p {
+			max-width: 320px !important;
+		}
 	}
 }
 @media (max-width: 360px) {
-	.homepage-hero h1 {
-		font-size: 35px !important;
-		margin-bottom: 40px !important;
+	.homepage-hero {
+		h1 {
+			font-size: 35px !important;
+			margin-bottom: 40px !important;
+		}
 	}
 }
-.underlined-static{
-	text-decoration: underline $abu5;
-}
-@media (min-width:680px) and (max-width:992px){
-	.homepage-hero .header .bg{
-		height: 400px;
+@media (min-width:680px) and (max-width:992px) {
+	.homepage-hero {
+		.header {
+			.bg {
+				height: 400px;
+			}
+			height: auto;
+			.container {
+				height: auto;
+			}
+		}
 	}
-	.homepage-hero .header,
-	.homepage-hero .header .container{
-		height: auto;
-	}
 }
-
 @media screen and (max-width: 800px) {
-	.homepage-hero .header .bg{
-		height: 700px;
+	.homepage-hero {
+		.header {
+			.bg {
+				height: 700px;
+				justify-content: flex-start;
+				text-align: center;
+				background-position: 40% 120%;
+				background-size: 100% auto;
+				h1 {
+					margin: 0 auto;
+					padding-top: 30px;
+					margin-bottom: 20px;
+				}
+				p {
+					margin: 0 auto;
+					margin-bottom: 20px;
+				}
+				button.btn {
+					margin: 0 auto;
+				}
+			}
+			height: 700px;
+		}
 	}
-  .homepage-hero .header{
-		height: 700px
-	}
-  .homepage-hero .header .bg {
-    justify-content: flex-start;
-    text-align: center;
-    background-position: 40% 120%;
-    background-size: 100% auto;
-  }
-  .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
-    margin: 0 auto;
-  }
-  .homepage-hero .header .bg h1 {
-    padding-top: 30px;
-    margin-bottom: 20px;
-  }
-  .homepage-hero .header .bg p {
-    margin-bottom: 20px;
-  }
 }
 @media screen and (max-width: 680px) {
-  .homepage-hero .header{
-		height: auto;
+	.homepage-hero {
+		.header {
+			height: auto;
+			.bg {
+				justify-content: flex-start;
+				text-align: center;
+				background-position: 40% 100%;
+				background-size: 150% auto;
+				height: 760px;
+				h1 {
+					margin: 0 auto;
+				}
+				p {
+					margin: 0 auto;
+				}
+				button.btn {
+					margin: 0 auto;
+				}
+			}
+		}
 	}
-  .homepage-hero .header .bg {
-    justify-content: flex-start;
-    text-align: center;
-    background-position: 40% 100%;
-    background-size: 150% auto;
-    height: 760px;
-  }
-  .homepage-hero .header .bg h1, .homepage-hero .header .bg p, .homepage-hero .header .bg button.btn {
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 489px) {
-  .homepage-hero .header{
-    height: auto;
-  }
-  .homepage-hero .header .bg {
-    height: 600px;
-    background-position: bottom center;
-  }
+	.homepage-hero {
+		.header {
+			height: auto;
+			.bg {
+				height: 600px;
+				background-position: bottom center;
+			}
+		}
+	}
 }
 @media screen and (max-width: 360px) {
-  .homepage-hero .header .bg {
-    height: 500px;
-    background-position: bottom center;
-  }
+	.homepage-hero {
+		.header {
+			.bg {
+				height: 500px;
+				background-position: bottom center;
+			}
+		}
+	}
 }
-/*mins pay*/

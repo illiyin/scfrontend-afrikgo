@@ -8,9 +8,9 @@
  }
 }
 .route .route-desc {
- font-family: "Rubik Medium", Fallback, sans-serif;
+ font-family: $font-medium;
  font-size: 16px;
- color: #9daebf;
+ color: $abu4;
  margin-bottom: 90px;
  margin-top: 20px;
  text-transform: uppercase;
@@ -19,11 +19,11 @@
 .route-item {
  padding: 20px;
  margin-bottom: 38px;
- background: #fff;
+ background: $putih;
  border-radius: 10px;
  display: flex;
  justify-content: space-between;
- box-shadow: 0 2px 28px rgba(0, 0, 0, 0.09);
+ box-shadow: 0 2px 28px $hitam1;
 }
 
 .route-item .dest,
@@ -37,15 +37,15 @@
  margin: 0;
 }
 .route-item .price p:nth-child(1) {
- font-family: "Rubik Light", Fallback, sans-serif;
+ font-family: $font-family;
  font-size: 16px;
- color: #767676;
+ color: $abu3;
  margin-bottom: 5px;
 }
 .route-item .price p:nth-child(2) {
- font-family: "Rubik Regular", Fallback, sans-serif;
+ font-family: $font-regular;
  font-size: 25px;
- color: #2788e6;
+ color: $biru;
 }
 .route-item ul {
  margin-bottom: 0;
@@ -54,16 +54,16 @@
 .route-item .dest li {
  list-style: none;
  padding-left: 20px;
- font-family: "Rubik Medium", Fallback, sans-serif;
+ font-family: $font-medium;
  font-size: 16px;
- color: #2a2a2a;
+ color: $hitam;
  position: relative;
 }
 .route-item .dest li span {
  width: 9px;
  height: 9px;
  border-radius: 50%;
- background: #d2dce6;
+ background: $abu8;
  position: absolute;
  left: 0;
  top: 7px;
@@ -74,14 +74,14 @@
  width: 2px;
  top: 13px;
  left: 3.5px;
- background: #f3f7fb;
+ background: $putih6;
  height: 20px;
 }
 .route-item .dest li:nth-child(1) {
  margin-bottom: 15px;
 }
 .route-item .dest li:nth-child(2) span {
- background: #2788e6;
+ background: $biru;
 }
 .feature .benefit-title {
  margin-top: 33px;
