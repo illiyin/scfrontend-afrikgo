@@ -1,39 +1,46 @@
 .pagetitle {
-    font-family: $font-family;
-    font-size: 42px;
-    font-weight: 300;
-    color: $biru;
-    margin-bottom: 20px;
-    text-align: center;
+	font-family: $font-family;
+	font-size: 42px;
+	font-weight: 300;
+	color: $biru;
+	margin-bottom: 20px;
+	text-align: center;
 }
-
-.ride-form .find-form-wrapper .group-input .field {
-    max-width: none;
+.ride-form {
+	.find-form-wrapper {
+		.group-input {
+			.field {
+				max-width: none;
+			}
+			width: 22.5%;
+			.find-btn {
+				width: 100%;
+			}
+		}
+		.switch {
+			width: 3%;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
 }
-@media (min-width: 1200px){
-    .find-form-wrapper .field {
-        max-width: 204px;
-    }
+.find-form-wrapper {
+	.group-input {
+		position: relative;
+		margin: 0 6px;
+		width: 18%;
+		span {
+			position: absolute;
+			top: 22px;
+			left: 15px;
+		}
+	}
 }
-.ride-form .find-form-wrapper .group-input {
-    width: 22.5%;
-}
-.find-form-wrapper .group-input {
-    position: relative;
-    margin: 0 6px;
-    width: 18%;
-}
-.ride-form .find-form-wrapper .switch {
-    width: 3%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.find-form-wrapper .group-input span {
-    position: absolute;
-    top: 22px;
-    left: 15px;
-}
-.ride-form .find-form-wrapper .group-input .find-btn {
-    width: 100%;
+@media (min-width: 1200px) {
+	.find-form-wrapper {
+		.field {
+			max-width: 204px;
+		}
+	}
 }

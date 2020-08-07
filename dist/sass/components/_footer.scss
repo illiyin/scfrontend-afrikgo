@@ -7,9 +7,9 @@
 	h4 {
 		margin: 0;
 		margin-bottom: 33px;
-		font-family: "Rubik Medium", Fallback, sans-serif;
+		font-family: $font-medium;
 		font-size: 16px;
-		color: #2788e6;
+		color: $biru;
 		text-transform: uppercase;
 	}
 }
@@ -22,12 +22,12 @@
 		margin: 0;
 		list-style: none;
 		a {
-			font-family: "Rubik Light", Fallback, sans-serif;
+			font-family: $font-family;
 			font-size: 16px;
-			color: #767676;
+			color: $abu3;
 			padding: 2px 0;
 			&:hover {
-				color: #2788e6;
+				color: $biru;
 			}
 		}
 	}
