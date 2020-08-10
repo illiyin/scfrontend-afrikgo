@@ -273,18 +273,6 @@
 	margin-bottom: 22px;
 	line-height: auto;
 }
-.first-name {
-	width: 220px;
-	float: left;
-	margin-right: 20px;
-}
-.last-name {
-	float: right;
-	width: 220px;
-	&::after {
-		clear: both;
-	}
-}
 .input-gender {
 	padding-top: 0;
 	margin-top: 0;
@@ -823,7 +811,7 @@
 				h1 {
 					margin: 0 auto;
 					padding-top: 30px;
-					margin-bottom: 20px;
+					margin-bottom: 35px;
 				}
 				p {
 					margin: 0 auto;
@@ -847,9 +835,6 @@
 				background-position: 40% 100%;
 				background-size: 150% auto;
 				height: 760px;
-				h1 {
-					margin: 0 auto;
-				}
 				p {
 					margin: 0 auto;
 				}
@@ -875,7 +860,6 @@
 	.homepage-hero {
 		.header {
 			.bg {
-				height: 500px;
 				background-position: bottom center;
 			}
 		}

@@ -71,27 +71,10 @@
 	color: $abu2;
 	font-size: 14px;
 	margin: 10px 14px;
-	width: 42px;
-	height: 42px;
-	border: 1px solid $putih3;
-	position: relative;
-	border-radius: 50%;
-	padding: 10px;
-	padding-top: 10px;
-	font-family: $font-medium;
-	color: $abu2;
-	font-size: 14px;
-	margin: 10px 14px;
+	
 }
 .circle {
 	&::before {
-		content: " ";
-		position: absolute;
-		width: 1px;
-		top: -25px;
-		left: 50%;
-		height: 35px;
-		background: $putih4;
 		content: " ";
 		position: absolute;
 		width: 1px;
@@ -108,14 +91,7 @@
 		left: 50%;
 		height: 40px;
 		background: $putih4;
-		content: " ";
-		position: absolute;
-		width: 1px;
-		bottom: -25px;
-		left: 50%;
-		height: 40px;
-		background: $putih4;
-	}
+		}
 }
 @media (max-width: 681px) {
 	.find-form {
@@ -133,12 +109,9 @@
 	.find-form-wrapper {
 		.circle-or {
 			margin: 10px auto;
-			margin: 10px auto;
 		}
 		.group-input {
 			.find-btn {
-				margin: 0;
-				padding: 24px 21px;
 				margin: 0;
 				padding: 24px 21px;
 			}
@@ -191,38 +164,26 @@
 	.find-form-wrapper {
 		.group-input {
 			&:nth-child(1) {
-				width: 30%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(2) {
-				width: 30%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(3) {
-				width: 30%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(4) {
-				width: 40%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(6) {
-				width: 40%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(5) {
-				width: 9%;
-				padding-left: 5px;
 				width: 100%;
 				padding-left: 5px;
 				margin-bottom: 20px;
