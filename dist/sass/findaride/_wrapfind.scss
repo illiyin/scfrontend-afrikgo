@@ -6,30 +6,51 @@
 	margin-bottom: 20px;
 	text-align: center;
 }
+
 .ride-form {
 	.find-form-wrapper {
 		.group-input {
+			
 			.field {
 				max-width: none;
 			}
-			width: 22.5%;
+			
 			.find-btn {
 				width: 100%;
 			}
 		}
+
 		.switch {
-			width: 3%;
+			// width: 3%;
 			text-align: center;
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
+
+		.ride-btn {
+			width: 19%;
+
+			@media screen and (max-width: 991px){
+				margin-left: auto;
+				margin-right: auto;
+				width: 40%;
+			}
+
+			@media screen and (max-width: 489px){
+				width: 100%;
+				margin: 0 9px;
+				padding-left: 0;
+			}
+		}
 	}
 }
+
 .find-form-wrapper {
 	.group-input {
 		position: relative;
 		margin: 0 6px;
 		width: 18%;
+
 		span {
 			position: absolute;
 			top: 22px;
@@ -37,6 +58,7 @@
 		}
 	}
 }
+
 @media (min-width: 1200px) {
 	.find-form-wrapper {
 		.field {
