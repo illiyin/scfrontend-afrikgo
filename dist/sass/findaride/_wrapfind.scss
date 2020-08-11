@@ -9,8 +9,17 @@
 
 .ride-form {
 	.find-form-wrapper {
-		.group-input {
+		.wraping {
+			flex-wrap: nowrap;
 			
+			@media screen and (max-width: 991px){
+				flex-wrap: wrap;	
+			}
+		}
+
+		.group-input {
+			width: auto;
+
 			.field {
 				max-width: none;
 			}
@@ -20,20 +29,39 @@
 			}
 		}
 
+		.input-leaving,
+		.input-going {
+			@media screen and (max-width: 991px){
+				flex: 1;
+			}
+
+			@media screen and (max-width: 767px){
+				flex-basis: 100%;
+			}
+		}
+
 		.switch {
-			// width: 3%;
 			text-align: center;
 			padding-top: 20px;
 			padding-bottom: 20px;
+			
+			@media screen and (max-width: 991px){
+				width: auto;
+			}
+		}
+
+		.input-date {
+			@media screen and (max-width: 991px){
+				flex: 1 1 100%;
+			}
 		}
 
 		.ride-btn {
-			width: 19%;
 
 			@media screen and (max-width: 991px){
 				margin-left: auto;
 				margin-right: auto;
-				width: 40%;
+				flex: 1 1 100%;
 			}
 
 			@media screen and (max-width: 489px){

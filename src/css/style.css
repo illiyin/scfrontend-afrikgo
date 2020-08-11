@@ -2977,29 +2977,52 @@ a {
   margin-bottom: 20px;
   text-align: center; }
 
-.ride-form .find-form-wrapper .group-input .field {
-  max-width: none; }
+.ride-form .find-form-wrapper .wraping {
+  flex-wrap: nowrap; }
+  @media screen and (max-width: 991px) {
+    .ride-form .find-form-wrapper .wraping {
+      flex-wrap: wrap; } }
 
-.ride-form .find-form-wrapper .group-input .find-btn {
-  width: 100%; }
+.ride-form .find-form-wrapper .group-input {
+  width: auto; }
+  .ride-form .find-form-wrapper .group-input .field {
+    max-width: none; }
+  .ride-form .find-form-wrapper .group-input .find-btn {
+    width: 100%; }
+
+@media screen and (max-width: 991px) {
+  .ride-form .find-form-wrapper .input-leaving,
+  .ride-form .find-form-wrapper .input-going {
+    flex: 1; } }
+
+@media screen and (max-width: 767px) {
+  .ride-form .find-form-wrapper .input-leaving,
+  .ride-form .find-form-wrapper .input-going {
+    flex-basis: 100%; } }
 
 .ride-form .find-form-wrapper .switch {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px; }
-
-.ride-form .find-form-wrapper .ride-btn {
-  width: 19%; }
   @media screen and (max-width: 991px) {
-    .ride-form .find-form-wrapper .ride-btn {
-      margin-left: auto;
-      margin-right: auto;
-      width: 40%; } }
-  @media screen and (max-width: 489px) {
-    .ride-form .find-form-wrapper .ride-btn {
-      width: 100%;
-      margin: 0 9px;
-      padding-left: 0; } }
+    .ride-form .find-form-wrapper .switch {
+      width: auto; } }
+
+@media screen and (max-width: 991px) {
+  .ride-form .find-form-wrapper .input-date {
+    flex: 1 1 100%; } }
+
+@media screen and (max-width: 991px) {
+  .ride-form .find-form-wrapper .ride-btn {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 1 100%; } }
+
+@media screen and (max-width: 489px) {
+  .ride-form .find-form-wrapper .ride-btn {
+    width: 100%;
+    margin: 0 9px;
+    padding-left: 0; } }
 
 .find-form-wrapper .group-input {
   position: relative;

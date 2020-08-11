@@ -392,12 +392,6 @@ a:focus{
     margin-right: auto;
     display: block;
 }
-.ride-form .find-form-wrapper .switch{
-    width: 3%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 .ride-form .switch img{
     display: inline-block;
 }
@@ -1278,16 +1272,6 @@ a:focus{
     .ride-form .find-form-wrapper{
         width: 100%;
     }
-    .ride-form .find-form-wrapper .input-leaving,
-    .ride-form .find-form-wrapper .input-going{
-        width: 43.8%;
-    }
-    .ride-form .find-form-wrapper .switch{
-        width: 4.3%;
-    }
-    .ride-form .find-form-wrapper .input-date{
-        width: 100%;
-    }
     
     /* --- Ride Detail --- */
     .rdc-schedule .schedule-label{
@@ -1323,10 +1307,6 @@ a:focus{
     }
     
     /* --- Find A Ride --- */
-    .ride-form .find-form-wrapper .input-leaving,
-    .ride-form .find-form-wrapper .input-going{
-        width: 100%;
-    }
     .ride-list{
         padding-top: 30px;
     }
