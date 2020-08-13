@@ -4,6 +4,27 @@
 	background-position: 0 100%;
 }
 .find-form-wrapper {
+	.group-input {
+		position: relative;
+		margin: 0 6px;
+		width: 18%;
+
+		span {
+			position: absolute;
+			top: 22px;
+			left: 15px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.find-form-wrapper {
+		.field {
+			max-width: 204px;
+		}
+	}
+}
+.find-form-wrapper {
 	background: $putih;
 	padding: 25px 24px 25px 15px;
 	box-shadow: 0px 0px 40px -2px $abu10;
@@ -119,7 +140,29 @@
 @media (max-width: 1091px) {
 	.find-form-wrapper {
 		.group-input {
-			flex-wrap: wrap;
+			&:nth-child(1) {
+				width: 30.5%;
+				margin-bottom: 20px;
+			}
+			&:nth-child(2) {
+				width: 30.5%;
+				margin-bottom: 20px;
+			}
+			&:nth-child(3) {
+				width: 30.5%;
+				margin-bottom: 20px;
+			}
+			&:nth-child(4) {
+				width: 41%;
+				margin-bottom: 20px;
+			}
+			&:nth-child(6) {
+				width: 41%;
+				margin-bottom: 20px;
+			}
+			&:nth-child(5) {
+				width: 10%;
+			}
 			.find-btn {
 				margin: 0;
 				padding: 24px 21px;
@@ -140,26 +183,38 @@
 	.find-form-wrapper {
 		.group-input {
 			&:nth-child(1) {
+				width: 30%;
+				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(2) {
+				width: 30%;
+				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(3) {
+				width: 30%;
+				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(4) {
+				width: 40%;
+				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(6) {
+				width: 40%;
+				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(5) {
+				width: 9%;
+				padding-left: 5px;
 				width: 100%;
 				padding-left: 5px;
 				margin-bottom: 20px;
@@ -173,4 +228,6 @@
 		width: 100%;
 	}
 }
+
+
 

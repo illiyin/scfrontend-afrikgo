@@ -73,24 +73,4 @@
 	}
 }
 
-.find-form-wrapper {
-	.group-input {
-		position: relative;
-		margin: 0 6px;
-		width: 18%;
 
-		span {
-			position: absolute;
-			top: 22px;
-			left: 15px;
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.find-form-wrapper {
-		.field {
-			max-width: 204px;
-		}
-	}
-}

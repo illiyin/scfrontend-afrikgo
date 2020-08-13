@@ -2638,6 +2638,19 @@ a {
   background-size: 100%;
   background-position: 0 100%; }
 
+.find-form-wrapper .group-input {
+  position: relative;
+  margin: 0 6px;
+  width: 18%; }
+  .find-form-wrapper .group-input span {
+    position: absolute;
+    top: 22px;
+    left: 15px; }
+
+@media (min-width: 1200px) {
+  .find-form-wrapper .field {
+    max-width: 204px; } }
+
 .find-form-wrapper {
   background: #fff;
   padding: 25px 24px 25px 15px;
@@ -2729,12 +2742,27 @@ a {
     padding: 24px 21px; } }
 
 @media (max-width: 1091px) {
-  .find-form-wrapper .group-input {
-    flex-wrap: wrap; }
-    .find-form-wrapper .group-input .find-btn {
-      margin: 0;
-      padding: 24px 21px;
-      width: 100%; }
+  .find-form-wrapper .group-input:nth-child(1) {
+    width: 30.5%;
+    margin-bottom: 20px; }
+  .find-form-wrapper .group-input:nth-child(2) {
+    width: 30.5%;
+    margin-bottom: 20px; }
+  .find-form-wrapper .group-input:nth-child(3) {
+    width: 30.5%;
+    margin-bottom: 20px; }
+  .find-form-wrapper .group-input:nth-child(4) {
+    width: 41%;
+    margin-bottom: 20px; }
+  .find-form-wrapper .group-input:nth-child(6) {
+    width: 41%;
+    margin-bottom: 20px; }
+  .find-form-wrapper .group-input:nth-child(5) {
+    width: 10%; }
+  .find-form-wrapper .group-input .find-btn {
+    margin: 0;
+    padding: 24px 21px;
+    width: 100%; }
   .circle::before {
     display: none; }
   .circle::after {
@@ -2742,21 +2770,33 @@ a {
 
 @media (max-width: 792px) {
   .find-form-wrapper .group-input:nth-child(1) {
+    width: 30%;
+    margin-bottom: 20px;
     width: 100%;
     margin-bottom: 20px; }
   .find-form-wrapper .group-input:nth-child(2) {
+    width: 30%;
+    margin-bottom: 20px;
     width: 100%;
     margin-bottom: 20px; }
   .find-form-wrapper .group-input:nth-child(3) {
+    width: 30%;
+    margin-bottom: 20px;
     width: 100%;
     margin-bottom: 20px; }
   .find-form-wrapper .group-input:nth-child(4) {
+    width: 40%;
+    margin-bottom: 20px;
     width: 100%;
     margin-bottom: 20px; }
   .find-form-wrapper .group-input:nth-child(6) {
+    width: 40%;
+    margin-bottom: 20px;
     width: 100%;
     margin-bottom: 20px; }
   .find-form-wrapper .group-input:nth-child(5) {
+    width: 9%;
+    padding-left: 5px;
     width: 100%;
     padding-left: 5px;
     margin-bottom: 20px; }
@@ -2928,19 +2968,6 @@ a {
     width: 100%;
     margin: 0 9px;
     padding-left: 0; } }
-
-.find-form-wrapper .group-input {
-  position: relative;
-  margin: 0 6px;
-  width: 18%; }
-  .find-form-wrapper .group-input span {
-    position: absolute;
-    top: 22px;
-    left: 15px; }
-
-@media (min-width: 1200px) {
-  .find-form-wrapper .field {
-    max-width: 204px; } }
 
 .ride-list .ride-item {
   padding: 8px 24px 0 18px; }

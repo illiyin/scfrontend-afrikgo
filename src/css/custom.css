@@ -384,14 +384,6 @@ a:focus{
     font-size: 45px;
     margin-bottom: 30px;
 }
-.ride-form .find-form-wrapper{
-    border-radius: 6px;
-    max-width: 928px;
-    padding-left: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 .ride-form .switch img{
     display: inline-block;
 }
