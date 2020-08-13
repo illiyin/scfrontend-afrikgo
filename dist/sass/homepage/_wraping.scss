@@ -9,9 +9,7 @@
 	box-shadow: 0px 0px 40px -2px $abu10;
 	margin-bottom: 42px;
 	.group-input {
-		position: relative;
-		margin: 0 9px;
-		width: 18%;
+		width: auto;
 		.field {
 			padding-left: 45px;
 		}
@@ -121,29 +119,7 @@
 @media (max-width: 1091px) {
 	.find-form-wrapper {
 		.group-input {
-			&:nth-child(1) {
-				width: 30.5%;
-				margin-bottom: 20px;
-			}
-			&:nth-child(2) {
-				width: 30.5%;
-				margin-bottom: 20px;
-			}
-			&:nth-child(3) {
-				width: 30.5%;
-				margin-bottom: 20px;
-			}
-			&:nth-child(4) {
-				width: 41%;
-				margin-bottom: 20px;
-			}
-			&:nth-child(6) {
-				width: 41%;
-				margin-bottom: 20px;
-			}
-			&:nth-child(5) {
-				width: 10%;
-			}
+			flex-wrap: wrap;
 			.find-btn {
 				margin: 0;
 				padding: 24px 21px;
@@ -197,3 +173,4 @@
 		width: 100%;
 	}
 }
+
