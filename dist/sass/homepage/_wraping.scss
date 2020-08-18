@@ -29,8 +29,10 @@
 	padding: 25px 24px 25px 15px;
 	box-shadow: 0px 0px 40px -2px $abu10;
 	margin-bottom: 42px;
+
 	.group-input {
 		width: auto;
+
 		.field {
 			padding-left: 45px;
 		}
@@ -40,13 +42,15 @@
 			left: 15px;
 		}
 		&:nth-child(4) {
-			width: initial;
+			width: auto;
+			flex: 1;
 		}
 		&:nth-child(5) {
-			width: initial;
+			width: auto;
 		}
 		&:nth-child(6) {
-			width: initial;
+			width: auto;
+			flex: 1;
 		}
 		.find-btn {
 			background: $biru;
@@ -58,7 +62,7 @@
 			color: $putih;
 		}
 		.offer-btn {
-			background: $orange !important;
+			background: $orange;
 		}
 	}
 	.field {
@@ -72,6 +76,7 @@
 		position: relative;
 	}
 }
+
 .wraping {
 	display: flex;
 	flex-wrap: wrap;
@@ -86,12 +91,12 @@
 	border-radius: 50%;
 	padding: 10px;
 	padding-top: 10px;
-	font-family: $font-medium;
+	font-family: $font-medium; 							 	 	 
 	color: $abu2;
 	font-size: 14px;
 	margin: 10px 14px;
-	
 }
+
 .circle {
 	&::before {
 		content: " ";
@@ -149,19 +154,21 @@
 				margin-bottom: 20px;
 			}
 			&:nth-child(3) {
-				width: 30.5%;
+				flex: 1;
 				margin-bottom: 20px;
 			}
 			&:nth-child(4) {
-				width: 41%;
+				width: auto;
+				flex-basis: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(6) {
-				width: 41%;
+				flex: 1;
 				margin-bottom: 20px;
 			}
 			&:nth-child(5) {
-				width: 10%;
+				width: auto;
+				flex-basis: 100%;
 			}
 			.find-btn {
 				margin: 0;
@@ -183,38 +190,26 @@
 	.find-form-wrapper {
 		.group-input {
 			&:nth-child(1) {
-				width: 30%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(2) {
-				width: 30%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(3) {
-				width: 30%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(4) {
-				width: 40%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(6) {
-				width: 40%;
-				margin-bottom: 20px;
 				width: 100%;
 				margin-bottom: 20px;
 			}
 			&:nth-child(5) {
-				width: 9%;
-				padding-left: 5px;
 				width: 100%;
 				padding-left: 5px;
 				margin-bottom: 20px;
