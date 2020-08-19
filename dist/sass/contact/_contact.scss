@@ -1,9 +1,20 @@
+.field {
+	font-family: $font-regular;
+	font-size: 15px;
+	color: $abu7;
+	padding: 17px 22px;
+	border-radius: 5px;
+	border: 1px solid $putih3;
+	width: calc(100%);
+	margin-bottom: 22px;
+	line-height: auto;
+}
 .contact {
     background: $putih8; 
 }
 .contact-area {
-	width: 96%;
-	max-width: 460px;
+	width: auto;
+	max-width: 730px;
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 150px;
@@ -80,13 +91,13 @@
 	}
 }
 .first-name {
-    width: 220px;
+    width: 355px;
     float: left;
     margin-right: 20px;
 }
 .last-name {
     float: right;
-    width: 220px;
+    width: 355px;
 }
 
 @media (max-width: 465px) {
@@ -100,6 +111,7 @@
 			padding: 20px 4.78%;
 			width: calc(100% - 9.56%);
 		}
+		
 	}
 	.signup-area {
 		.field {
@@ -128,6 +140,21 @@
 
 }
 @media (max-width: 496px) {
+	.first-name {
+		width: 100%;
+		float: left;
+		margin-right: 5%;
+	}
+	.last-name {
+		float: right;
+		width: 100%;
+	}
+	.input-gender {
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 729px) {
 	.first-name {
 		width: 100%;
 		float: left;
