@@ -32,6 +32,7 @@
 		-webkit-box-sizing: initial !important;
 		-moz-box-sizing: initial !important;
 		box-sizing: initial !important;
+		padding: 20px;
 	}
 }
 .pagetitle {
@@ -91,13 +92,13 @@
 	}
 }
 .first-name {
-    width: 355px;
+    width: 330px;
     float: left;
     margin-right: 20px;
 }
 .last-name {
     float: right;
-    width: 355px;
+    width: 330px;
 }
 
 @media (max-width: 465px) {
